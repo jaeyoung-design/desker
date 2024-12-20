@@ -1,0 +1,148 @@
+@charset "utf-8";
+
+/***** COMMON *****/
+
+/* float 해제를 위한 클래스 */
+ul::after, ol::after, .clear::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+li {
+    float: left;
+}
+
+
+/*** 공통 클래스 ***/
+html, body {
+    width: 100%;
+    height: 100%;
+}
+body {
+    font-family: "Nunito Sans", sans-serif;
+    color: #333;
+}
+
+
+/*** 콘텐츠 너비설정 ***/
+.inner {
+    width: 90%;
+    max-width: 1620px;
+    margin: 0 auto;
+}
+
+.con-inner {
+    width: 80%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+
+
+/*** 콘텐츠 타이틀 ***/
+.con-tit {
+    text-align: center;
+}
+.con-tit h2 {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-size: 1.875rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 2px;
+}
+.con-tit p {
+    color: #777;
+    margin-bottom: 50px;
+}
+
+/*** 버튼 디자인 ***/
+.con-btn {
+    border: 1px solid #333;
+    display: inline-block;
+    padding-right: 25px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+}
+.con-btn:hover {
+    background-color: #333;
+    border-color: #333;
+}
+.con-btn:hover a {
+    color: #ff6357;
+
+    background-image: url(../img/btn-arrow_hover.png);
+}
+.con-btn a {
+    color: #333;
+    padding: 10px 25px;
+
+    background: url(../img/btn-arrow.png) no-repeat right;
+    background-size: 20px 20px;
+}
+
+/*** 버튼 디자인2 ***/
+.rbtn {
+    display: inline-block;
+    padding: 12px 36px;
+    border-radius: 40px;
+    font-size: 16px;
+    font-size: 1rem;
+    color: #333;
+    border: 1px solid #333;
+}
+.rbtn:hover {
+    background-color: #333;
+    color: #ff6357;
+}
+
+/*** 버튼 디자인3 (이전,다음 버튼) ***/
+.btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.btn a {
+    width: 40px;
+    height: 40px;
+    font-size: 0;
+}
+
+/* 이전 */
+.btn.prev {
+    left: 0px;
+}
+.btn.prev a {
+    background: url(../img/btn_prev.png) no-repeat;
+    background-position: left;
+    background-size: cover;
+}
+
+/* 다음 */
+.btn.next {
+    right: 0px;
+}
+.btn.next a {
+    background: url(../img/btn_next.png) no-repeat;
+    background-position: left;
+    background-size: cover;
+}
+
+/* 버튼 호버했을 때 */
+.btn:hover a {
+    background-position: right;
+}
+
+
+
+
+/* 구글웹폰트 */
+/* 
+font-family: "Nunito Sans", sans-serif;
+font-weight: 200~1000;
+
+font-family: "Italianno", cursive;
+font-weight: 400; 
+*/

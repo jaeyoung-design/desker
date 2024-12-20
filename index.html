@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가능성 그 앞으로 | DESKER</title>
+
+    <!-- 구글웹폰트 -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Italianno&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <!-- jQuery -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script>
+
+        $(window).scroll(function () {
+
+            var hdH = $('header').height();
+            var scTop = $(this).scrollTop();
+
+            $('header').removeClass('scrollDown');
+
+            if (scTop > hdH) {
+                $('header').addClass('scrollDown');
+            } else {
+                $('header').removeClass('scrollDown');
+            }
+
+        });
+
+    </script>
+    <script src="js/header.js"></script>
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+
+    <!-- 헤더 -->
+    <header>
+        <div class="inner">
+
+            <h1 class="logo"><a href="index.html">데스커</a></h1>
+
+            <nav class="navi">
+                <ul class="menu">
+                    <li>
+                        <a href="contents/products/category.html" class="gnb">Products</a>
+
+                        <ul class="lnb">
+                            <li><a href="contents/products/category.html">제품소개</a></li>
+                            <li><a href="contents/products/review.html">제품후기</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="contents/activity/projects.html" class="gnb">Activity</a>
+
+                        <ul class="lnb">
+                            <li><a href="contents/activity/projects.html">프로젝트</a></li>
+                            <li><a href="contents/activity/dmagazine.html">데스커 소식</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#" class="gnb">I AM DESKER</a>
+
+                        <ul class="lnb">
+                            <li><a href="#">브랜드 스토리</a></li>
+                            <li><a href="#">BI</a></li>
+                            <li><a href="#">매장안내</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="contents/planning-service/about.html" class="gnb">Planning Service</a>
+
+                        <ul class="lnb">
+                            <li><a href="contents/planning-service/about.html">플래닝서비스 알아보기</a></li>
+                            <li><a href="#">플래닝서비스 BASIC</a></li>
+                            <li><a href="#">플래닝서비스 PRO</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#" class="gnb">Biz</a>
+
+                        <ul class="lnb">
+                            <li><a href="#">비즈니스 혜택</a></li>
+                            <li><a href="#">비즈니스 갤러리</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="icon-wrap clear">
+                <div class="search">
+                    <form action="#">
+                        <fieldset>
+                            <legend>제품검색</legend>
+
+                            <input type="text" placeholder="제품검색">
+                            <input type="submit">
+                        </fieldset>
+                    </form>
+                </div>
+
+                <div class="login">
+                    <a href="#">로그인 버튼</a>
+                </div>
+
+                <div class="all-menu">
+                    <a href="#">모든메뉴 버튼</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="bg">서브메뉴 배경</div>
+    </header>
+
+
+    <!-- 본문내용 -->
+    <main>
+        <!-- 메인영역 | 주우재 cf 영상 -->
+        <div class="video-box">
+            <video autoplay muted loop>
+                <source src="media/main_cf.mp4" type="video/mp4">
+            </video>
+        </div>
+    </main>
+
+    <section>
+
+        <!-- 영역1. 베스트 제품 -->
+        <article class="best-prod">
+            <div class="inner">
+
+                <div class="con-tit">
+                    <h2>desker's pick</h2>
+                    <p>데스커가 선정한 베스트 제품을 만나보세요!</p>
+                </div>
+
+                <div class="content">
+                    <!-- 이전,다음 버튼 -->
+                    <div class="btn prev"><a href="#">이전</a></div>
+                    <div class="btn next"><a href="#">다음</a></div>
+
+                    <div class="prod-wrap">
+                        <ul>
+                            <li>
+                                <div class="img-box"><img src="img/best-prod/prod_01.jpg" alt="1200*700 모션데스크 플러스">
+                                </div>
+
+                                <a href="#">
+                                    <div class="txt-box">
+                                        <h3>모션 데스크</h3>
+                                        <p>1200*700 모션데스크 플러스</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <div class="img-box"><img src="img/best-prod/prod_02.jpg" alt="올라운드 HF 화이트"></div>
+
+                                <a href="#">
+                                    <div class="txt-box">
+                                        <h3>태스크 체어</h3>
+                                        <p>올라운드 HF 화이트</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <div class="img-box"><img src="img/best-prod/prod_03.jpg" alt="1400*700 컴퓨터 데스크 2.0">
+                                </div>
+
+                                <a href="#">
+                                    <div class="txt-box">
+                                        <h3>컴퓨터 데스크</h3>
+                                        <p>1400*700 컴퓨터 데스크 2.0</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <div class="img-box"><img src="img/best-prod/prod_04.jpg" alt="W1400 6단 책상세트 콘센트형">
+                                </div>
+
+                                <a href="#">
+                                    <div class="txt-box">
+                                        <h3>책상 세트</h3>
+                                        <p>W1400 6단 책상세트 콘센트형</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <div class="img-box"><img src="img/best-prod/prod_05.jpg" alt="1200*600 베이직데스크">
+                                </div>
+
+                                <a href="#">
+                                    <div class="txt-box">
+                                        <h3>베이직 데스크</h3>
+                                        <p>1200*600 베이직데스크</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <div class="img-box"><img src="img/best-prod/prod_06.jpg" alt="6단 목제책장 하부깊은 수납형(상부도어)">
+                                </div>
+
+                                <a href="#">
+                                    <div class="txt-box">
+                                        <h3>목제책장</h3>
+                                        <p>
+                                            W600 6단 목제책장<br>
+                                            하부깊은 수납형(상부도어)
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <div class="img-box"><img src="img/best-prod/prod_07.jpg" alt="1800*800 모션데스크 프리미엄">
+                                </div>
+
+                                <a href="#">
+                                    <div class="txt-box">
+                                        <h3>모션 데스크</h3>
+                                        <p>1800*800 모션데스크 프리미엄</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <div class="img-box"><img src="img/best-prod/prod_08.jpg" alt="싱글 모니터암"></div>
+
+                                <a href="#">
+                                    <div class="txt-box">
+                                        <h3>데스크 액세서리</h3>
+                                        <p>싱글 모니터암</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </article>
+
+
+        <!-- 영역2. 비즈니스 갤러리 -->
+        <article class="biz-gall">
+            <div class="inner">
+
+                <div class="con-tit">
+                    <h2>desker gallery</h2>
+                    <p>데스커 제품으로 만들어진 오피스 인테리어를 확인해보세요</p>
+                </div>
+
+                <div class="img-wrap">
+                    <div class="gall-img prev-img">
+                        <a href="#"><img src="img/gallery/biz_gallery_01.jpg" alt="구경하는오피스 마곡지점 인테리어보러가기"></a>
+                    </div>
+
+                    <div class="gall-img next-img">
+                        <a href="#"><img src="img/gallery/biz_gallery_03.jpg" alt="원스피리츠 인테리어보러가기"></a>
+                    </div>
+
+                    <div class="main-img">
+                        <a href="#"><img src="img/gallery/biz_gallery_02.jpg" alt="금병영 (유튜버 '침착맨' 사무실) 인테리어보러가기"></a>
+                        <h3><a href="#">금병영 (유튜버 '침착맨' 사무실)</a></h3>
+                        <p>
+                            <span>#오피스</span>
+                            <span>#회의실</span>
+                            <span>#라운지</span>
+                            <span>#모션데스크</span>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </article>
+
+
+        <!-- 영역3. 플래닝 서비스 -->
+        <article class="planning-service">
+            <div class="con-inner">
+
+                <div class="con-tit">
+                    <h2>planning service</h2>
+                    <p>일에만 집중할 수 있도록, 데스커만의 플래닝 서비스</p>
+                </div>
+
+                <div class="service-wrap clear">
+                    <div class="service">
+                        <div class="icon-img"><img src="img/planning_service_01.png" alt="플래닝서비스 - 3D 공간플래너 아이콘"></div>
+                        <p>구매 전 미리 가구배치를 해보고 싶다면?</p>
+                        <a href="#" class="rbtn">3D 공간플래너</a>
+                    </div>
+
+                    <div class="service">
+                        <div class="icon-img"><img src="img/planning_service_02.png" alt="플래닝서비스 BAISC 아이콘"></div>
+                        <p>가구를 직접 보고 전문가와 상담하고 싶다면?</p>
+                        <a href="#" class="rbtn">플래닝서비스 BASIC</a>
+                    </div>
+
+                    <div class="service">
+                        <div class="icon-img"><img src="img/planning_service_03.png" alt="플래닝서비스 PRO 아이콘"></div>
+                        <p>실측부터 시공까지 한번에 진행하고 싶다면?</p>
+                        <a href="#" class="rbtn">플래닝서비스 PRO</a>
+                    </div>
+                </div>
+
+            </div>
+        </article>
+
+
+        <!-- 영역4. 데스커 소식 -->
+        <article class="dmagazine">
+            <div class="con-inner">
+
+                <div class="con-tit">
+                    <h2>D<span>m</span>agazine</h2>
+                    <p>
+                        시작하고 성장하는 사람들을 위한 가구 브랜드.<br>
+                        가능성 앞으로, DESKER
+                    </p>
+
+                    <div class="con-btn">
+                        <a href="#">더 많은 DESKER 소식이 궁금하다면?</a>
+                    </div>
+                    <!-- 화살표 아이콘, background 이미지 적용 -->
+                </div>
+
+                <div class="news-box clear">
+                    <ul class="news-first-line">
+                        <li class="news">
+                            <a href="#"><img src="img/dmagazine/dmagazine_08.jpg"
+                                    alt="[D인사이트] EP02. #대학교 #좁은 공간의 스마트한 활용"></a>
+                            <div class="news-txt">
+                                <h3 class="news-title">[D인사이트] EP02. #대학교 #좁은 공간의 스마트한 활용</h3>
+                                <p class="news-des">집중과 몰입력을 극대화한 연구 &amp; 강의실 인테리어</p>
+                                <p class="news-date">2024-10-25</p>
+                            </div>
+                        </li>
+
+                        <li class="news">
+                            <a href="#"><img src="img/dmagazine/dmagazine_07.jpg" alt="[D터뷰] EP03. 아파트멘터리 & 오피스멘터리"></a>
+                            <div class="news-txt">
+                                <h3 class="news-title">[D터뷰] EP03. 아파트멘터리 &amp; 오피스멘터리</h3>
+                                <p class="news-des">로망을 현실로 만들어 주는 인테리어 회사</p>
+                                <p class="news-date">2024-10-28</p>
+                            </div>
+                        </li>
+
+                        <li class="news">
+                            <a href="#"><img src="img/dmagazine/dmagazine_06.jpg"
+                                    alt="[NEW] 새로워진 컴퓨터데스크 & 하부가림판데스크 2.0 출시!"></a>
+                            <div class="news-txt">
+                                <h3 class="news-title">
+                                    [NEW]<br>
+                                    새로워진 컴퓨터데스크 &amp; 하부가림판데스크 2.0 출시!
+                                </h3>
+                                <p class="news-date">2024-10-28</p>
+                            </div>
+                        </li>
+
+                        <li class="news">
+                            <a href="#"><img src="img/dmagazine/dmagazine_05.jpg"
+                                    alt="[EVENT] 20% 할인 데스커스 회원만을 위한 신제품 4종 시크릿 쿠폰"></a>
+                            <div class="news-txt">
+                                <h3 class="news-title">[EVENT] 20% 할인</h3>
+                                <p class="news-des">데스커스 회원만을 위한 신제품 4종 시크릿 쿠폰</p>
+                                <p class="news-date">2024-11-01</p>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul class="news-last-line">
+                        <li class="news">
+                            <a href="#"><img src="img/dmagazine/dmagazine_04.jpg" alt="[D노하우] 직장인이 생각하는 최고의 복지"></a>
+                            <div class="news-txt">
+                                <h3 class="news-title">[D노하우] 직장인이 생각하는 최고의 복지</h3>
+                                <p class="news-des">'이 복지는 꼭 있어야 한다!'</p>
+                                <p class="news-date">2024-10-23</p>
+                            </div>
+                        </li>
+
+                        <li class="news">
+                            <a href="#"><img src="img/dmagazine/dmagazine_03.jpg"
+                                    alt="[NEW] 데스커가 제안하는 신제품 5종을 만나보세요!"></a>
+                            <div class="news-txt">
+                                <h3 class="news-title">
+                                    [NEW]<br>
+                                    데스커가 제안하는 신제품 5종을 만나보세요!
+                                </h3>
+                                <p class="news-date">2024-10-14</p>
+                            </div>
+                        </li>
+
+                        <li class="news">
+                            <a href="#"><img src="img/dmagazine/dmagazine_02.jpg"
+                                    alt="[STORE] 마곡 지식산업센터 데스커 '구경하는 오피스' OPEN!"></a>
+                            <div class="news-txt">
+                                <h3 class="news-title">
+                                    [STORE]<br>
+                                    마곡 지식산업센터 데스커 '구경하는 오피스' OPEN!
+                                </h3>
+                                <p class="news-date">2024-10-07</p>
+                            </div>
+                        </li>
+
+                        <li class="news">
+                            <a href="#"><img src="img/dmagazine/dmagazine_01.jpg" alt="가능성을 펼치는 책상, 데스커 모션데스크 추천!"></a>
+                            <div class="news-txt">
+                                <h3 class="news-title">가능성을 펼치는 책상, 데스커 모션데스크 추천!</h3>
+                                <p class="news-date">2024-09-26</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </article>
+
+
+        <!-- 영역5. 데스커 워케이션 -->
+        <article class="workation">
+            <div class="con-inner">
+
+                <div class="con-tit">
+                    <h2>desker workation</h2>
+
+                    <p>
+                        답답한 오피스를 벗어나 잠시<br>
+                        <strong>‘환기의 시간’</strong>을 가져보면 어떨까요?
+                    </p>
+
+                    <div class="workation-btn">
+                        <!-- 버튼에 화살표 이미지, background로 적용! -->
+                        <div class="con-btn">
+                            <a href="#">desker workation 알아보기</a>
+                        </div>
+
+                        <div class="con-btn">
+                            <a href="#">desker workation 예약하기</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="workation-video">
+                    <iframe src="https://www.youtube.com/embed/Fco9f3CqXhk?si=RRClMYyYxWr1ghZj"
+                        title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+            </div>
+        </article>
+
+
+        <!-- 영역6. 인스타그램 / 데스커 라운지 -->
+        <article class="social">
+
+            <!-- 인스타그램 -->
+            <div class="follow">
+
+                <div class="con-tit">
+                    <p>더 많은 desker life가 궁금하다면?</p>
+                    <h2>follow us</h2>
+                </div>
+
+                <div class="instagram">
+                    <p class="insta-account"><a href="#">@desker_official</a></p>
+
+                    <ul class="insta-thumb">
+                        <li>
+                            <a href="#"><img src="img/instagram/insta_01.jpg"
+                                    alt="(앉아서 책상 속으로) 책상 앞에서 더 가치있는 시간을 보낼 수 있도록, 오늘의집 x 데스커가 준비한 공간 개선 프로젝트!"></a>
+                        </li>
+
+                        <li>
+                            <a href="#"><img src="img/instagram/insta_02.jpg"
+                                    alt="효율적인 작업실 레이아웃 TIP! #베이직데스크 2개를 활용한 @soop87 님의 작업실을 소개합니다."></a>
+                        </li>
+
+                        <li>
+                            <a href="#"><img src="img/instagram/insta_03.jpg"
+                                    alt="장르의 한계에 갇히지 않고 도전하며, 늘 새로운 가능성을 향해 움직이는 만능 엔터테이너 주우재. 그의 취향이 가득한 모션데스크를 영상을 통해 만나보세요."></a>
+                        </li>
+
+                        <li>
+                            <a href="#"><img src="img/instagram/insta_04.jpg"
+                                    alt="데스커 모두를 움직일 가능성 팝업 in 현대백화점 판교. 오직 판교 현대백화점에서만 만나보실 수 있는 엔터테이너 주우재와 번역가 황석희의 알파룸! 현장에서 이벤트에 참여한 분들을 위한 특별한 선물과 구매하시는 고객님들을 위한 특별한 혜택까지 준비되어 있어요! 방문하고 두 모델이 모션데스크를 사용하는 방법을 경험해보세요"></a>
+                        </li>
+
+                        <li>
+                            <a href="#"><img src="img/instagram/insta_05.jpg"
+                                    alt="단순한 번역을 넘어 원문 그 이상의 의미를 전하기 위해 움직이는 초월 번역가 황석희. 그의 노력이 물든 모션데스크를 영상을 통해 만나보세요."></a>
+                        </li>
+
+                        <li>
+                            <a href="#"><img src="img/instagram/insta_06.jpg"
+                                    alt="어느 곳에서나 조화롭게 어우러지는 데스커의 #타원형테이블 을 소개합니다. 원하시는 용도에 맞게 배치해 보세요."></a>
+                        </li>
+
+                        <li>
+                            <a href="#"><img src="img/instagram/insta_07.jpg"
+                                    alt="모션데스크가 워라밸을 지켜준다? 데스커 모션데스크와 함께하는 디자이너 지연님의 하루를 소개합니다. 재택러들은 모두 공감하는 책상 위 이야기, 영상을 통해 확인해 보세요!"></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- 데스커 라운지 -->
+            <div class="desker-lounge clear">
+
+                <div class="lounge-facade"><img src="img/desker_lounge.png" alt="데스커라운지 홍대 파사드이미지"></div>
+
+                <div class="con-tit">
+                    <h2>가치있게 일하는 사람들의 연결고리, <span>desker lounge</span></h2>
+
+                    <div class="con-btn">
+                        <a href="#">desker lounge 알아보기</a>
+                    </div>
+                </div>
+
+            </div>
+        </article>
+
+    </section>
+
+
+    <!-- 푸터 -->
+    <footer>
+        <div class="inner">
+
+            <div class="ftop clear">
+                <div class="company ">
+                    <div class="co-info">
+                        <a href="#"><img src="img/logo_w.png" alt="데스커"></a>
+
+                        <p>(주)일룸</p>
+                        <p class="ceo">대표이사 정보은</p>
+                        <p>서울특별시 송파구 오금로 311</p>
+                        <p>사업자등록번호 215-86-93600</p>
+                    </div>
+
+                    <div class="sns-icon clear">
+                        <div class="sns">
+                            <a href="#"><img src="img/icon_sns_facebook.png" alt="페이스북 바로가기"></a>
+                        </div>
+
+                        <div class="sns">
+                            <a href="#"><img src="img/icon_sns_instagram.png" alt="인스타그램 바로가기"></a>
+                        </div>
+
+                        <div class="sns">
+                            <a href="#"><img src="img/icon_sns_naver.png" alt="네이버블로그 바로가기"></a>
+                        </div>
+
+                        <div class="sns">
+                            <a href="#"><img src="img/icon_sns_youtube.png" alt="유튜브 바로가기"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="site-map">
+                    <ul class="site-map-gnb">
+                        <li>
+                            <h3>Products</h3>
+
+                            <ul class="site-map-lnb">
+                                <li><a href="#">제품소개</a></li>
+                                <li><a href="#">제품후기</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <h3>Activity</h3>
+
+                            <ul class="site-map-lnb">
+                                <li><a href="#">프로젝트</a></li>
+                                <li><a href="#">데스커 소식</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <h3>I AM DESKER</h3>
+
+                            <ul class="site-map-lnb">
+                                <li><a href="#">브랜드 스토리</a></li>
+                                <li><a href="#">BI</a></li>
+                                <li><a href="#">매장안내</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <h3>Planning Service</h3>
+
+                            <ul class="site-map-lnb">
+                                <li><a href="#">플래닝서비스 알아보기</a></li>
+                                <li><a href="#">플래닝서비스 BASIC</a></li>
+                                <li><a href="#">플래닝서비스 PRO</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <h3>Biz</h3>
+
+                            <ul class="site-map-lnb">
+                                <li><a href="#">비즈니스 혜택</a></li>
+                                <li><a href="#">비즈니스 갤러리</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="fbottom clear">
+                <ul class="policy">
+                    <li><a href="#">윤리신고센터</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                </ul>
+
+                <p>Copyright 2022 iloom CO. LTD. All right reserved.</p>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>

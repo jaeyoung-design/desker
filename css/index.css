@@ -1,0 +1,497 @@
+@charset "utf-8";
+
+/* index.css */
+
+/**** MAIN ***********************************************************************************************/
+main {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 200px;
+    overflow: hidden;
+    position: relative;
+
+    /* outline: 2px solid red; */
+}
+
+main .video-box {
+    /* padding-bottom: 56.25%; */
+    width: 100%;
+    height: 100%;
+}
+main .video-box video {
+    display: block;
+    width: 100%;
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
+/**** SECTION ***********************************************************************************************/
+
+
+/****** 영역1. 베스트 제품 *********************************************/
+article.best-prod {
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+article.best-prod .content {
+    /* outline: 2px solid red; */
+
+    position: relative; /* 이전,다음버튼의 기준 */
+}
+
+
+
+/*** 이미지 박스 ***/
+.best-prod .prod-wrap {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+
+    position: relative; 
+    left: -10px;
+    /* outline: 2px solid red; */
+}
+.best-prod .prod-wrap ul {
+    width: 200%;
+}
+.best-prod .prod-wrap ul li {
+    width: calc(12.5% - 16px);
+    float: left;
+    margin-left: 16px;
+    border-radius: 15px;
+    overflow: hidden;
+    
+    position: relative; /* .txt-box의 기준 */
+}
+
+.best-prod .prod-wrap ul li .img-box img {
+    width: 100%;
+    display: block;
+}
+
+.best-prod .prod-wrap ul li a {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7));
+
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.best-prod .prod-wrap ul li a .txt-box {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+}
+.best-prod .prod-wrap ul li a .txt-box h3 {
+    color: #eee;
+    margin-bottom: 10px;
+}
+.best-prod .prod-wrap ul li a .txt-box p {
+    color: #d9d9d9;
+}
+
+
+
+/****** 영역2. 비즈니스 갤러리 *********************************************/
+article.biz-gall {
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+article.biz-gall .img-wrap {
+    position: relative; /* .sub-img의 기준 */
+
+    /* outline: 2px solid red; */
+}
+
+article.biz-gall .img-wrap .gall-img {
+    width: 28%;
+    border-radius: 20px;
+    overflow: hidden;
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    /* outline: 2px solid blue; */
+}
+article.biz-gall .img-wrap .gall-img a img {
+    width: 100%;
+    display: block;
+    opacity: 0.6;
+}
+
+article.biz-gall .img-wrap .prev-img {
+    left: 0;
+}
+article.biz-gall .img-wrap .next-img {
+    right: 0;
+}
+
+article.biz-gall .main-img {
+    width: 40%;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 1px 1px 6px #eee;
+
+    /* outline: 2px solid blue; */
+}
+article.biz-gall .main-img > a {
+    margin-bottom: 10px;
+}
+article.biz-gall .main-img > a img {
+    width: 100%;
+    height: 400px;
+    display: block;
+}
+
+article.biz-gall .main-img h3 {
+    margin-left: 30px;
+    margin-bottom: 12px;
+}
+article.biz-gall .main-img h3 a {
+    color: #333;
+    font-size: 20px;
+    font-size: 1.25rem;
+}
+
+article.biz-gall .main-img p {
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+article.biz-gall .main-img p span{
+    background-color: #333;
+    color: #ddd;
+    font-size: 14px;
+    font-size: 0.875rem;
+    padding: 5px 16px;
+    border-radius: 20px;
+    margin-right: 5px;
+}
+
+
+
+/****** 영역3. 플래닝 서비스 *********************************************/
+article.planning-service {
+    width: 100%;
+    background-color: #eee;
+    padding: 70px 0;
+}
+
+article.planning-service .service-wrap .service {
+    width: 27%;
+    float: left;
+
+    /* outline: 2px solid red; */
+}
+article.planning-service .service-wrap .service~.service {
+    margin-left: 9.5%;
+}
+article.planning-service .service-wrap .service .icon-img {
+    width: 60%;
+    margin: 0 auto 20px;
+
+    /* outline: 2px solid blue; */
+}
+article.planning-service .service-wrap .service .icon-img img {
+    width: 100%;
+    display: block;
+}
+
+article.planning-service .service-wrap .service p {
+    text-align: center;
+    font-size: 18px;
+    font-size: 1.125rem;
+    margin-bottom: 40px;
+
+    /* outline: 2px solid blue; */
+}
+article.planning-service .service-wrap .service .btn {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+/****** 영역4. 데스커 소식 *********************************************/
+article.dmagazine {
+    width: 100%;
+    height: 850px;
+    margin: 50px 0;
+    overflow: hidden;
+}
+
+article.dmagazine .con-inner {
+    height: 100%;
+    position: relative; /* .con-tit & .con-btn의 기준 */
+
+    /* outline: 2px solid blue; */
+}
+
+article.dmagazine .con-tit {
+    /* outline: 1px solid red; */
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+article.dmagazine .con-tit h2 {
+    text-transform: none;
+    font-size: 48px;
+    font-size: 3rem;
+}
+article.dmagazine .con-tit h2 span {
+    font-family: "Italianno", cursive;
+    font-size: 80px;
+    font-size: 5rem;
+    font-weight: lighter;
+    letter-spacing: 6px;
+}
+article.dmagazine .con-tit p {
+    font-size: 24px;
+    font-size: 1.25rem;
+    line-height: 1.8rem;
+}
+
+
+article.dmagazine .news-box {
+    width: 60%;
+    height: 100%;
+    
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    /* outline: 2px solid blue; */
+}
+.news-box ul {
+    /* outline: 2px solid red; */
+
+    width: 45%;
+    margin-left: 5%;
+    float: left;
+
+    position: absolute;
+}
+.news-box ul.news-first-line {
+    left: 0;
+    /* top: -16%; */
+}
+.news-box ul.news-last-line {
+    right: 0;
+    /* top: -9%; */
+}
+
+.news-box ul li.news {
+    margin-bottom: 10px;
+    float: none;
+}
+.news-box ul li.news a {
+    margin-bottom: 5px;
+}
+.news-box ul li.news a img {
+    width: 100%;
+    display: block;
+}
+
+.news-box ul li.news .news-txt h3.news-title {
+    font-size: 16px;
+    font-size: 1rem;
+    letter-spacing: -1.5px;
+    line-height: 25px;
+}
+.news-box ul li.news .news-txt p.news-des {
+    font-size: 15px;
+    font-size: 0.9375rem;
+    line-height: 25px;
+}
+.news-box ul li.news .news-txt p.news-date {
+    font-size: 14px;
+    font-size: 0.875rem;
+    color: #777;
+    margin-top: 20px;
+}
+
+
+
+/****** 영역5. 데스커 워케이션 *********************************************/
+article.workation {
+    width: 100%;
+    height: 800px;
+    padding: 100px;
+    box-sizing: border-box;
+    background: url(../img/workation_bg.png) no-repeat bottom/cover;
+    background-attachment: fixed;
+
+    position: relative; /* ::before 가상요소의 기준! */
+}
+article.workation::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.7);
+
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+article.workation .con-inner {
+    height: 100%;
+    position: relative;  /* .con-tit & .workation-video의 기준!! */
+
+    /* outline: 2px solid blue; */
+}
+
+article.workation .con-tit {
+    /* outline: 2px solid red; */
+
+    position: absolute;
+    left: 0;
+    top: 43%;
+    transform: translateY(-50%);
+}
+article.workation .con-tit h2 {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 50px;
+    font-size: 0;
+
+    background: url(../img/workation_title.png) no-repeat;
+    background-position: 50px;
+    background-size: contain;
+
+    /* outline: 2px solid red; */
+}
+article.workation .con-tit p {
+    color: #333;
+    font-size: 24px;
+    font-size: 1.25rem;
+    line-height: 1.8rem;
+    margin-bottom: 100px;
+}
+article.workation .con-tit .workation-btn .con-btn {
+    margin: 0 10px;
+}
+
+article.workation .workation-video {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+article.workation .workation-video iframe {
+    width: 600px;
+    height: 350px;
+    border: 0;
+}
+
+
+
+
+
+/****** 영역6. 인스타그램/데스커 라운지 *********************************************/
+article.social {
+    width: 100%;
+    background: linear-gradient(#d9d9d9, rgba(0,0,0,0));
+    padding-top: 100px;
+}
+
+
+
+/****** 인스타그램 ******/
+article.social .follow {
+    width: 100%;
+    /* overflow: hidden; */
+    margin-bottom: 200px;
+}
+
+article.social .follow .con-tit p {
+    margin-bottom: 6px;
+    color: #555;
+}
+article.social .follow .con-tit h2 {
+    margin-bottom: 50px;
+}
+
+article.social .follow .instagram {
+    /* outline: 2px solid blue; */
+    overflow: hidden;
+}
+
+article.social .follow .instagram p.insta-account {
+    text-align: center;
+    margin-bottom: 20px;
+}
+article.social .follow .instagram p.insta-account:hover a {
+    text-decoration: underline;
+    color: #000;
+}
+article.social .follow .instagram p.insta-account a {
+    color: #555;
+    font-size: 18px;
+    font-size: 1.125rem;
+}
+
+article.social .follow .instagram ul.insta-thumb {
+    /* outline: 2px solid red; */
+
+    width: 200%;
+    /* margin-left: -135px; */
+}
+article.social .follow .instagram ul.insta-thumb li {
+    width: 270px;
+    float: left;
+}
+article.social .follow .instagram ul.insta-thumb li~li {
+    margin-left: 10px;
+}
+article.social .follow .instagram ul.insta-thumb li a img {
+    width: 100%;
+    display: block;
+}
+
+
+/****** 데스커 라운지 ******/
+article.social .desker-lounge {
+    width: 1280px;
+    margin: 0 auto;
+
+    /* outline: 2px solid blue; */
+}
+
+article.social .desker-lounge .lounge-facade {
+    float: left;
+    width: 40%;
+}
+article.social .desker-lounge .lounge-facade img {
+    width: 100%;
+    display: block;
+}
+
+article.social .desker-lounge .con-tit {
+    float: right;
+    margin-top: 90px;
+}
+article.social .desker-lounge .con-tit h2 {
+    font-size: 26px;
+    font-size: 1.625rem;
+    font-weight: 400;
+    margin-bottom: 36px;
+}
+article.social .desker-lounge .con-tit h2 span {
+    font-weight: 600;
+}
+
+

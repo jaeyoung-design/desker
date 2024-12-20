@@ -1,0 +1,145 @@
+@charset "utf-8";
+
+
+/***** FOOTER *****/
+footer {
+    width: 100%;
+    padding-top: 60px;
+    background-color: #333;
+}
+
+footer .inner {
+    height: 100%;
+
+    /* outline: 2px solid blue; */
+}
+
+
+/* company-info */
+footer .ftop {
+    margin-bottom: 60px;
+}
+footer .ftop .company {
+    /* outline: 2px solid red; */
+    float: left;
+}
+
+footer .ftop .company .co-info {
+    margin-bottom: 30px;
+}
+
+footer .ftop .company .co-info a {
+    width: 150px;
+    margin-bottom: 30px;
+}
+footer .ftop .company .co-info a img {
+    width: 100%;
+    display: block;
+}
+footer .ftop .company .co-info p {
+    color: #999;
+    line-height: 1.5rem;
+}
+
+footer .ftop .company .sns-icon .sns {
+    /* outline: 2px solid blue; */
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    float: left;
+}
+footer .ftop .company .sns-icon .sns~.sns {
+    margin-left: 14px;
+}
+footer .ftop .company .sns-icon .sns:hover a {
+    border: 1px solid #ff6357;
+}
+footer .ftop .company .sns-icon .sns a {
+    border: 1px solid #fff;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 100px;
+
+    position: relative;
+}
+footer .ftop .company .sns-icon .sns a img {
+    width: 200%;
+    display: block;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+footer .ftop .company .sns-icon .sns:hover img {
+    left: -100%;
+}
+
+
+/* site-map */
+footer .ftop .site-map {
+    /* outline: 2px solid purple; */
+    float: right;
+}
+footer .ftop .site-map ul.site-map-gnb > li {
+    float: left;
+    margin-left: 100px;
+}
+footer .ftop .site-map ul.site-map-gnb > li h3 {
+    color: #bbb;
+    font-weight: 500;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-size: 1.25rem;
+}
+footer .ftop .site-map ul.site-map-gnb > li ul.site-map-lnb li {
+    line-height: 1.7rem;
+    float: none;
+}
+footer .ftop .site-map ul.site-map-gnb > li ul.site-map-lnb li:hover a {
+    color: #ccc;
+}
+footer .ftop .site-map ul.site-map-gnb > li ul.site-map-lnb li a {
+    color: #888;
+}
+
+
+
+/* policy */
+footer .fbottom {
+    padding: 30px 0 20px;
+    border-top: 1px solid #666;
+}
+
+footer .fbottom ul.policy {
+    float: left;
+}
+footer .fbottom ul.policy li {
+    display: inline-block;
+    padding-right: 30px;
+
+    position: relative;
+}
+footer .fbottom ul.policy li~li::before {
+    content: "";
+    display: block;
+    height: 14px;
+    border-left: 1px solid #888;
+
+    position: absolute;
+    left: -15px;
+    top: 4px;
+}
+footer .fbottom ul.policy li:hover a {
+    text-decoration: underline;
+}
+footer .fbottom ul.policy li a {
+    color: #999;
+}
+
+
+/* copyright */
+footer .fbottom p {
+    color: #999;
+    float: right;
+}
