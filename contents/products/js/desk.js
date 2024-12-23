@@ -10,7 +10,7 @@ $(document).ready(function () {
     //초기설정 (전체 탭메뉴 해당 이미지 숨기기)
     $('.viewer .on').siblings().hide();
 
-    $('.prod-des .tab-menu a').click(function (e) {
+    $('.tab-menu a').click(function (e) {
 
         e.preventDefault();
 
@@ -31,11 +31,11 @@ $(document).ready(function () {
 
     ////////////// .prod-des 이미지 슬라이드 //////////////
     var slideImg = 0;
-    var imgCount = $('.img-wrap').length;
+    var imgCount = $('.prod-des.on .img-wrap').length;
     //console.log('.img-wrap의 이미지 갯수: ' + imgCount);
 
     //다음버튼 클릭
-    $('.prod-des .next a').on('click', function (e) {
+    $('.next a').on('click', function (e) {
 
         e.preventDefault();
 
@@ -55,7 +55,7 @@ $(document).ready(function () {
     });
 
     //이전버튼 클릭
-    $('.prod-des .prev a').on('click', function (e) {
+    $('.prev a').on('click', function (e) {
 
         e.preventDefault();
 
@@ -72,6 +72,33 @@ $(document).ready(function () {
         }, 800);
 
     });
+
+
+    ////////////// 제품 카테고리 탭메뉴 구현 //////////////
+    //초기 설정
+    $('.prod-des.on').show().siblings().hide();
+
+    $('.category li a').click(function(e){
+
+        e.preventDefault();
+
+        var prodCategory = $(this).attr('href');
+        //console.log('클릭한 카테고리의 href값: ' + prodCategory);
+
+        //클릭한 카테고리 탭메뉴에 .on 클래스 적용
+        $(this).parents('li').addClass('on').siblings().removeClass('on');
+
+        //해당 내용 등장
+        $(prodCategory).show().siblings().hide();
+
+        //탭메뉴 버튼 클릭하면 첫번째 페이지부터 등장
+        slideImg = 0;
+        $('.img-wrap').css('margin-left', slideImg);
+
+    });
+
+    
+
 
 
 
