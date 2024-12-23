@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가능성 그 앞으로 | DESKER</title>
+
+    <!-- 구글웹폰트 -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Italianno&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/header.css">
+
+    <link rel="stylesheet" href="css/about.css">
+
+    <link rel="stylesheet" href="../../css/footer.css">
+
+    <!-- jQuery -->
+    <script src="js/jquery-1.7.2.min.js"></script>
+    <script>
+
+        /* 헤더 기본값 - 해당메뉴 하이라이트 */
+        $(function () {
+            $('.gnb:contains("Planning Service")').addClass('active');
+        })
+
+    </script>
+    <script src="../../js/header.js"></script>
+    <script src="js/about.js"></script>
+</head>
+
+<body>
+
+    <!-- 헤더 -->
+    <header>
+        <div class="inner">
+
+            <h1 class="logo"><a href="../../index.html">데스커</a></h1>
+
+            <nav class="navi">
+                <ul class="menu">
+                    <li>
+                        <a href="../products/category.html" class="gnb">Products</a>
+
+                        <ul class="lnb">
+                            <li><a href="../products/category.html">제품소개</a></li>
+                            <li><a href="../products/review.html">제품후기</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="../activity/projects.html" class="gnb">Activity</a>
+
+                        <ul class="lnb">
+                            <li><a href="../activity/projects.html">프로젝트</a></li>
+                            <li><a href="../activity/dmagazine.html">데스커 소식</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#" class="gnb">I AM DESKER</a>
+
+                        <ul class="lnb">
+                            <li><a href="#">브랜드 스토리</a></li>
+                            <li><a href="#">BI</a></li>
+                            <li><a href="#">매장안내</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="about.html" class="gnb">Planning Service</a>
+
+                        <ul class="lnb">
+                            <li><a href="about.html">플래닝서비스 알아보기</a></li>
+                            <li><a href="#">플래닝서비스 BASIC</a></li>
+                            <li><a href="#">플래닝서비스 PRO</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#" class="gnb">Biz</a>
+
+                        <ul class="lnb">
+                            <li><a href="#">비즈니스 혜택</a></li>
+                            <li><a href="#">비즈니스 갤러리</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="icon-wrap clear">
+                <div class="search">
+                    <form action="#">
+                        <fieldset>
+                            <legend>제품검색</legend>
+
+                            <input type="text" placeholder="제품검색">
+                            <input type="submit">
+                        </fieldset>
+                    </form>
+                </div>
+
+                <div class="login">
+                    <a href="#">로그인 버튼</a>
+                </div>
+
+                <div class="all-menu">
+                    <a href="#">모든메뉴 버튼</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="bg">서브메뉴 배경</div>
+    </header>
+
+
+
+    <!-- 본문내용 -->
+
+    <!-- INTRO -->
+    <section id="intro" class="con1 page">
+        <div class="con-tit">
+            <h2>Planning Service</h2>
+            <p>오피스 구성, 여전히 어렵고 막막한 분들을 위한 DESKER만의 플래닝 서비스</p>
+        </div>
+
+        <div class="caption">
+            <h3>이런 분들에게 추천해요!</h3>
+
+            <ul>
+                <li>
+                    <div class="icon-box"><img src="img/planning_service_01.png" alt="3D 공간플래너"></div>
+
+                    <div class="txt-box">
+                        <p class="target">이 사이즈가 오피스에 괜찮을까요?<span></span></p>
+                        <p>구매 전 가구가 설치된 오피스를 눈으로 보고 싶어요.</p>
+                    </div>
+
+                    <a href="#planner" class="rbtn">3D 공간플래너 알아보기</a>
+                </li>
+
+                <li>
+                    <div class="icon-box"><img src="img/planning_service_02.png" alt="플래닝서비스 BASIC"></div>
+
+                    <div class="txt-box">
+                        <p class="target">30인 이하 오피스를 계획 중이에요<span></span></p>
+                        <p>가구를 직접 보고 전문가와 상담받고 싶어요.</p>
+                    </div>
+
+                    <a href="#basic" class="rbtn">플래닝서비스 BASIC 알아보기</a>
+                </li>
+
+                <li>
+                    <div class="icon-box"><img src="img/planning_service_03.png" alt="플래닝서비스 PRO"></div>
+
+                    <div class="txt-box">
+                        <p class="target">중.대형 오피스를 계획 중이에요<span></span></p>
+                        <p>도면도 없고 정확한 사무실 사이즈도 몰라요.</p>
+                    </div>
+
+                    <a href="#pro" class="rbtn">플래닝서비스 PRO 알아보기</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 3D 공간플래너 -->
+    <section id="planner" class="con2 page">
+        <div class="con-wrap">
+
+            <div class="img-box"><img src="img/3d_planner.jpg" alt="3D공간플래너 구현이미지"></div>
+
+            <p>
+                쉽게 내 오피스 공간을 그리고 빠르게 가구배치까지!<br>
+                규모가 크지 않고 <span>구매 전 가구배치를 보고싶다면,</span>
+            </p>
+
+            <a href="#" class="rbtn">3D 공간플래너 이용하기</a>
+
+        </div>
+    </section>
+
+    <!-- 플래닝서비스 BASIC -->
+    <section id="basic" class="con3 page">
+        <div class="con-wrap">
+
+            <div class="service">
+                <div class="service-target">
+                    <h3>
+                        <span class="line">30인 이하 오피스를 계획하신다면<span></span></span><br>
+                        플래닝 서비스 <span>BASIC</span>
+                    </h3>
+
+                    <p>
+                        데스커 스토어에 방문해서 구매 전 가구를<br>
+                        직접 체험하고 스토어 매니저의 전문 상담을 받을 수 있어요.
+                    </p>
+                </div>
+
+                <a href="#" class="rbtn">플래닝서비스 BASIC 예약하기</a>
+            </div>
+
+            <ul class="tab-menu">
+                <li class="on"><a href="#basic-service">제공 서비스</a></li>
+                <li><a href="#basic-gallery">서비스 사례</a></li>
+            </ul>
+
+            <div class="content-box">
+                <ul id="basic-service" class="tab-service">
+                    <li>
+                        <div class="img-wrap"><img src="img/plnngSrvcBasic_01.png" alt="제품 체험 및 상담"></div>
+                        <p>제품 체험 및 상담</p>
+                    </li>
+
+                    <li>
+                        <div class="img-wrap"><img src="img/plnngSrvcBasic_01.png" alt="제품 구성 상담"></div>
+                        <p>제품 구성 상담</p>
+                    </li>
+
+                    <li>
+                        <div class="img-wrap"><img src="img/plnngSrvcBasic_01.png" alt="3D공간플래너를 활용한 오피스 레이아웃 제공"></div>
+                        <p>
+                            3D 공간플래너를 활용한<br>
+                            오피스 레이아웃 제공
+                        </p>
+                    </li>
+
+                    <li>
+                        <div class="img-wrap"><img src="img/plnngSrvcBasic_01.png" alt="온라인 플래닝 서비스(챗봇-기업문의)"></div>
+                        <p>
+                            온라인 플래닝 서비스<br>
+                            (챗봇 - 기업문의)
+                        </p>
+                    </li>
+                </ul>
+
+                <div id="basic-gallery" class="tab-gallery">
+
+                    <ul class="gall-tab">
+                        <li class="on"><a href="#">1인<span> 오피스</span></a></li>
+                        <li><a href="#">5인<span> 오피스</span></a></li>
+                        <li><a href="#">10인<span> 오피스</span></a></li>
+                        <li><a href="#">20인<span> 오피스</span></a></li>
+                    </ul>
+
+                    <div class="gallery-box">
+                        <ul class="gall-slider">
+                            <li>
+                                <div class="gall-img">
+                                    <img src="img/basic_layout1_01.jpg" alt="1인 오피스 레이아웃">
+                                    <p>오피스 레이아웃</p>
+                                </div>
+
+                                <div class="gall-img">
+                                    <img src="img/basic_layout1_02.jpg" alt="1인 오피스 3D 렌더링">
+                                    <p>3D 렌더링</p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="gall-img">
+                                    <img src="img/basic_layout2_01.jpg" alt="5인 오피스 레이아웃">
+                                    <p>오피스 레이아웃</p>
+                                </div>
+
+                                <div class="gall-img">
+                                    <img src="img/basic_layout2_02.jpg" alt="5인 오피스 3D 렌더링">
+                                    <p>3D 렌더링</p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="gall-img">
+                                    <img src="img/basic_layout3_01.jpg" alt="10인 오피스 레이아웃">
+                                    <p>오피스 레이아웃</p>
+                                </div>
+
+                                <div class="gall-img">
+                                    <img src="img/basic_layout3_02.jpg" alt="10인 오피스 3D 렌더링">
+                                    <p>3D 렌더링</p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="gall-img">
+                                    <img src="img/basic_layout4_01.jpg" alt="20인 오피스 레이아웃">
+                                    <p>오피스 레이아웃</p>
+                                </div>
+
+                                <div class="gall-img">
+                                    <img src="img/basic_layout4_02.jpg" alt="20인 오피스 3D 렌더링">
+                                    <p>3D 렌더링</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 플래닝서비스 PRO -->
+    <section id="pro" class="con4 page">
+        <div class="con-wrap">
+
+            <div class="service">
+                <div class="service-target">
+                    <h3>
+                        <span class="line">중.대형 오피스를 계획하신다면<span></span></span><br>
+                        플래닝 서비스 <span>PRO</span>
+                    </h3>
+
+                    <p>
+                        사무가구 전문가 데스커 메이트가 당신의 오피스에 직접 방문하여<br>
+                        공간실측과 맞춤형 플래닝을 제공해드려요.
+                    </p>
+                </div>
+
+                <a href="#" class="rbtn">플래닝서비스 PRO 예약하기</a>
+            </div>
+
+            <ul class="tab-menu">
+                <li class="on"><a href="#pro-service">제공 서비스</a></li>
+                <li><a href="#pro-gallery">서비스 사례</a></li>
+            </ul>
+
+            <div class="content-box">
+                <ul id="pro-service" class="tab-service">
+                    <li>
+                        <div class="img-wrap"><img src="img/plnngSrvcPro_01.png" alt="오피스 방문상담 및 현장실측"></div>
+                        <p>오피스 방문상담 및 현장실측</p>
+                    </li>
+
+                    <li>
+                        <div class="img-wrap"><img src="img/plnngSrvcPro_01.png" alt="제품 구성 상담"></div>
+                        <p>제품 구성 상담</p>
+                    </li>
+
+                    <li>
+                        <div class="img-wrap"><img src="img/plnngSrvcPro_01.png" alt="3D공간플래너를 활용한 오피스 레이아웃 제공"></div>
+                        <p>
+                            3D 공간플래너를 활용한<br>
+                            오피스 레이아웃 제공
+                        </p>
+                    </li>
+
+                    <li>
+                        <div class="img-wrap"><img src="img/plnngSrvcPro_01.png" alt="시공 현장 관리"></div>
+                        <p>시공 현장 관리</p>
+                    </li>
+                </ul>
+
+                <div id="pro-gallery" class="tab-gallery">
+                    <!-- 이전, 다음버튼 -->
+                    <div class="btn prev"><a href="#">이전</a></div>
+                    <div class="btn next"><a href="#">다음</a></div>
+
+                    <div class="gallery-box">
+                        <ul class="gall-slider">
+                            <li>
+                                <div class="gall-img"><img src="img/pro_gall_01.jpg" alt="체슬리투자자문"></div>
+                                <p class="caption">체슬리투자자문</p>
+                            </li>
+    
+                            <li>
+                                <div class="gall-img"><img src="img/pro_gall_02.jpg" alt="휴롬엘에스"></div>
+                                <p class="caption">휴롬엘에스</p>
+                            </li>
+    
+                            <li>
+                                <div class="gall-img"><img src="img/pro_gall_03.jpg" alt="바움피엔에스"></div>
+                                <p class="caption">바움피엔에스</p>
+                            </li>
+    
+                            <li>
+                                <div class="gall-img"><img src="img/pro_gall_04.jpg" alt="wadiz"></div>
+                                <p class="caption">wadiz</p>
+                            </li>
+    
+                            <li>
+                                <div class="gall-img"><img src="img/pro_gall_05.jpg" alt="원스피리츠"></div>
+                                <p class="caption">원스피리츠</p>
+                            </li>
+    
+                            <li>
+                                <div class="gall-img"><img src="img/pro_gall_06.jpg" alt="금병영(유튜버'침착맨' 사무실)"></div>
+                                <p class="caption">금병영(유튜버'침착맨' 사무실)</p>
+                            </li>
+    
+                            <li>
+                                <div class="gall-img"><img src="img/pro_gall_07.jpg" alt="카카오 스타일"></div>
+                                <p class="caption">카카오 스타일</p>
+                            </li>
+    
+                            <li>
+                                <div class="gall-img"><img src="img/pro_gall_08.jpg" alt="데스커 워케이션 센터"></div>
+                                <p class="caption">데스커 워케이션 센터</p>
+                            </li>
+    
+                            <li>
+                                <div class="gall-img"><img src="img/pro_gall_09.jpg" alt="아트앤디자인"></div>
+                                <p class="caption">아트앤디자인</p>
+                            </li>
+    
+                            <li>
+                                <div class="gall-img"><img src="img/pro_gall_10.jpg" alt="바이포엠"></div>
+                                <p class="caption">바이포엠</p>
+                            </li>
+    
+                            <li>
+                                <div class="gall-img"><img src="img/pro_gall_11.jpg" alt="MARU 360"></div>
+                                <p class="caption">MARU 360</p>
+                            </li>
+    
+                            <li>
+                                <div class="gall-img"><img src="img/pro_gall_12.jpg" alt="플레이리스트"></div>
+                                <p class="caption">플레이리스트</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- 페이저 네비게이션 -->
+    <nav class="side-pager">
+        <ul>
+            <li class="on"><a href="#planner"><span>3D 공간플래너</span></a></li>
+            <li><a href="#basic"><span>플래닝 서비스 BASIC</span></a></li>
+            <li><a href="#pro"><span>플래닝 서비스 PRO</span></a></li>
+        </ul>
+    </nav>
+
+
+
+    <!-- 푸터 -->
+    <footer class="page">
+        <div class="inner">
+
+            <div class="ftop clear">
+                <div class="company ">
+                    <div class="co-info">
+                        <a href="#"><img src="img/logo_w.png" alt="데스커"></a>
+
+                        <p>(주)일룸</p>
+                        <p class="ceo">대표이사 정보은</p>
+                        <p>서울특별시 송파구 오금로 311</p>
+                        <p>사업자등록번호 215-86-93600</p>
+                    </div>
+
+                    <div class="sns-icon clear">
+                        <div class="sns">
+                            <a href="#"><img src="img/icon_sns_facebook.png" alt="페이스북 바로가기"></a>
+                        </div>
+
+                        <div class="sns">
+                            <a href="#"><img src="img/icon_sns_instagram.png" alt="인스타그램 바로가기"></a>
+                        </div>
+
+                        <div class="sns">
+                            <a href="#"><img src="img/icon_sns_naver.png" alt="네이버블로그 바로가기"></a>
+                        </div>
+
+                        <div class="sns">
+                            <a href="#"><img src="img/icon_sns_youtube.png" alt="유튜브 바로가기"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="site-map">
+                    <ul class="site-map-gnb">
+                        <li>
+                            <h3>Products</h3>
+
+                            <ul class="site-map-lnb">
+                                <li><a href="#">제품소개</a></li>
+                                <li><a href="#">제품후기</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <h3>Activity</h3>
+
+                            <ul class="site-map-lnb">
+                                <li><a href="#">프로젝트</a></li>
+                                <li><a href="#">데스커 소식</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <h3>I AM DESKER</h3>
+
+                            <ul class="site-map-lnb">
+                                <li><a href="#">브랜드 스토리</a></li>
+                                <li><a href="#">BI</a></li>
+                                <li><a href="#">매장안내</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <h3>Planning Service</h3>
+
+                            <ul class="site-map-lnb">
+                                <li><a href="#">플래닝서비스 알아보기</a></li>
+                                <li><a href="#">플래닝서비스 BASIC</a></li>
+                                <li><a href="#">플래닝서비스 PRO</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <h3>Biz</h3>
+
+                            <ul class="site-map-lnb">
+                                <li><a href="#">비즈니스 혜택</a></li>
+                                <li><a href="#">비즈니스 갤러리</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="fbottom clear">
+                <ul class="policy">
+                    <li><a href="#">윤리신고센터</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                </ul>
+
+                <p>Copyright 2022 iloom CO. LTD. All right reserved.</p>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,577 @@
+@charset "utf-8";
+
+/* Planning Service */
+/* about.css */
+
+
+
+
+/* html,body {
+    overflow: hidden;
+} */
+
+section.page {
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+    /* 각 페이지의 .con-wrap의 기준! */
+    /* outline: 1px solid red; */
+}
+
+.con-wrap {
+    width: 1280px;
+
+    position: absolute;
+    left: 55%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    /* outline: 2px solid blue; */
+}
+
+section .rbtn {
+    font-size: 14px;
+    font-size: 0.875rem;
+    float: right;
+}
+
+
+/**** section#intro ***********************************************************************************************/
+.con1 {
+    background: url(../img/service_main.jpg) no-repeat center/cover;
+}
+
+.con1 .con-tit {
+    width: 100%;
+    padding-top: 230px;
+    box-sizing: border-box;
+    margin-bottom: 100px;
+}
+
+.con1 .con-tit h2 {
+    color: #eee;
+    font-size: 32px;
+    font-size: 2rem;
+    margin-bottom: 16px;
+    text-transform: none;
+}
+
+.con1 .con-tit p {
+    color: #d9d9d9;
+    font-size: 20px;
+    font-size: 1.25rem;
+}
+
+
+
+.con1 .caption {
+    width: 1620px;
+    margin: 0 auto;
+    background-color: rgba(253, 253, 253, 0.8);
+    padding: 30px 60px 40px;
+    box-sizing: border-box;
+    border-radius: 30px;
+}
+
+.con1 .caption h3 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    padding-bottom: 30px;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #333;
+    /* outline: 2px solid red; */
+}
+
+.con1 .caption ul {
+    width: 1280px;
+    margin: 40px auto 0;
+}
+
+.con1 .caption ul li {
+    width: 360px;
+}
+
+.con1 .caption ul li~li {
+    margin-left: 100px;
+}
+
+.con1 .caption ul li .icon-box {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.con1 .caption ul li .icon-box img {
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+}
+
+.con1 .caption ul li .txt-box {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.caption ul li .txt-box .target {
+    font-size: 18px;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 6px;
+
+    position: relative;
+    /* 가상요소 after의 기준! */
+    z-index: 0;
+}
+
+.caption ul li .txt-box .target span {
+    content: "";
+    display: inline-block;
+    
+    /* 최종설정 */
+    width: 105%; 
+    /* 초기설정 */
+    width: 0; 
+
+    height: 17px;
+    background-color: #ff6357;
+
+    position: absolute;
+    bottom: 0;
+    left: -2.5%;
+    z-index: -1;
+}
+
+
+.caption ul li .rbtn {
+    float: none;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+/**** section#planner (3D 공간플래너) ***********************************************************************************************/
+.con2 {
+    background: url(../img/3d_planner_bg.jpg) no-repeat center/cover;
+}
+
+.con2 .con-wrap {
+    height: 500px;
+    /* outline: 2px solid blue; */
+}
+
+.con2 .img-box {
+    width: 55%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 1px 1px 8px #ccc;
+
+    float: left;
+
+    /* 초기설정 */
+    opacity: 0;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+}
+
+.con2 .img-box img {
+    width: 100%;
+    display: block;
+}
+
+.con2 p {
+    font-size: 20px;
+
+    position: absolute;
+    right: 0;
+    top: 190px;
+    /* outline: 2px solid plum; */
+}
+
+.con2 p span {
+    font-size: 22px;
+    font-weight: 600;
+    color: #ff6357;
+}
+
+
+.con2 .rbtn {
+    position: absolute;
+    right: 0;
+    bottom: 150px;    
+}
+
+
+
+
+/**** section#basic (플래닝서비스 basic) & #pro (플래닝서비스 pro)***********************************************************************************************/
+.con3 {
+    background-color: #f9f9f9;
+}
+
+.con4 {
+    background-color: #d6d6d6;
+}
+
+
+/*** 컨텐츠 타이틀 ***/
+.service {
+    width: 100%;
+    margin-bottom: 60px;
+
+    /* outline: 2px solid red; */
+}
+
+.service::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.service .service-target {
+    float: left;
+}
+
+.service .service-target h3 {
+    font-size: 26px;
+    margin-bottom: 40px;
+}
+
+.service .service-target h3 span {
+    color: #ff6357;
+}
+
+.service .service-target h3 .line {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+
+    position: relative;
+    /* .line의 기준 */
+}
+
+.service .service-target h3 .line>span {
+    content: "";
+    display: block;
+
+    /* 최종설정 */
+    width: 103%;
+    /* 최초설정 */
+    width: 0;
+
+    height: 6px;
+    background-color: #ff6357;
+
+    position: absolute;
+    left: -1.5%;
+    bottom: 2px;
+    z-index: -1;
+}
+
+.service .service-target p {
+    font-size: 18px;
+    font-size: 1.125rem;
+}
+
+.service .rbtn {
+    margin-top: 110px;
+}
+
+
+
+
+/*** 탭메뉴(#basic) ***/
+section .tab-menu li {
+    border-radius: 13px 13px 0 0;
+    overflow: hidden;
+    margin-right: 8px;
+    box-shadow: 1px 0 6px #d9d9d9;
+}
+
+section .tab-menu li a {
+    color: #333;
+    padding: 5px 20px;
+    background-color: #afafaf;
+}
+
+/* 선택된 탭메뉴 디자인 */
+section .tab-menu li.on a {
+    background-color: #dfdfdf;
+}
+
+/*** 탭메뉴(#pro) ***/
+section.con4 .tab-menu li {
+    box-shadow: 1px 0 6px #999;
+}
+
+section.con4 .tab-menu li a {
+    background-color: #888;
+}
+
+section.con4 .tab-menu li.on a {
+    background-color: #b0b0b0;
+}
+
+
+
+/*** 탭메뉴 컨텐츠(#basic) ***/
+section .content-box {
+    width: 100%;
+    background-color: #dfdfdf;
+    border-radius: 0 0 13px 13px;
+    padding: 40px 30px;
+    box-sizing: border-box;
+    box-shadow: 1px 0 6px #ddd;
+}
+
+
+/*** .con3 & .con4 공통 - 제공 서비스 ***/
+.content-box .tab-service {
+    /* 제이쿼리 초기설정! */
+    display: none;
+}
+
+.content-box .tab-service li {
+    width: 24.25%;
+    text-align: center;
+}
+
+.content-box .tab-service li~li {
+    margin-left: 1%;
+}
+
+.content-box .tab-service li .img-wrap {
+    width: 100%;
+    /* outline: 2px solid red; */
+}
+
+.content-box .tab-service li .img-wrap img {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+}
+
+.content-box .tab-service li p {
+    line-height: 1.3rem;
+}
+
+
+/*** 탭메뉴 컨텐츠(#pro) ***/
+section.con4 .content-box {
+    background-color: #b0b0b0;
+    box-shadow: 1px 0 6px #999;
+}
+
+
+
+/**** section#basic (플래닝서비스 basic)***********************************************************************************************/
+
+/*** .con3(basic) 서비스 사례 ***/
+.con3 .tab-gallery {
+    /* 제이쿼리 초기설정! */
+    display: none;
+
+    position: relative; /* 레이아웃 탭메뉴의 기준!! */
+}
+
+
+/* 오피스 별 레이아웃 탭메뉴 */
+.con3 .tab-gallery .gall-tab {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.con3 .tab-gallery .gall-tab li {
+    margin: 0 5px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.con3 .tab-gallery .gall-tab li a {
+    color: #eee;
+    background-color: #b0b0b0;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 6px 20px;
+}
+
+/* 탭메뉴 활성화 */
+.con3 .tab-gallery .gall-tab li.on a {
+    background-color: #333;
+}
+
+
+/* 실제 보여지는 이미지 공간 */
+.con3 .tab-gallery .gallery-box {
+    width: 80%;
+    padding-top: 60px;
+    margin: 0 auto;
+    overflow-x: scroll;
+}
+
+.con3 .tab-gallery .gallery-box::-webkit-scrollbar {
+    display: none;
+}
+
+/* 전체 이미지를 담는 ul */
+.con3 .tab-gallery .gallery-box .gall-slider {
+    width: 400%;
+}
+
+.con3 .tab-gallery .gallery-box .gall-slider li {
+    width: 25%;
+}
+
+.con3 .tab-gallery .gallery-box .gall-slider li .gall-img {
+    width: 49%;
+    float: left;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.con3 .tab-gallery .gallery-box .gall-slider li>div~div {
+    margin-left: 2%;
+}
+
+.con3 .tab-gallery .gallery-box .gall-slider li .gall-img img {
+    width: 100%;
+    display: block;
+}
+
+.con3 .tab-gallery .gallery-box .gall-slider li .gall-img p {
+    padding: 10px 0;
+}
+
+
+
+/**** section#pro (플래닝서비스 pro)***********************************************************************************************/
+
+/*** .con4(pro) 서비스 사례 ***/
+.con4 .tab-gallery {
+    /* 제이쿼리 초기설정! */
+    display: none;
+
+    position: relative; /* 이전,다음버튼의 기준 */
+}
+
+
+/* 실제 이미지가 보여지는 공간 */
+.con4 .tab-gallery .gallery-box {
+    width: 88%;
+    margin: 30px auto;
+    overflow: hidden;
+
+    /* outline: 3px solid red; */
+}
+
+/* 전체 이미지를 담는 부모 */
+.con4 .tab-gallery .gall-slider {
+    width: 400%;
+}
+
+/* 각 이미지 */
+.con4 .tab-gallery .gall-slider li {
+    width: 8%;
+
+    position: relative; /* p.caption의 기준 */
+}
+.con4 .tab-gallery .gall-slider li:nth-child(3n+1) {
+    margin-left: 0
+}
+.con4 .tab-gallery .gall-slider li~li {
+    margin-left: 0.5%;
+}
+
+.con4 .tab-gallery .gall-slider li .gall-img {
+    width: 100%;
+}
+
+.con4 .tab-gallery .gall-slider li .gall-img img {
+    width: 100%;
+    display: block;
+}
+
+.con4 .tab-gallery .gall-slider li p {
+    width: 100%;
+    height: 140px;
+    padding-top: 90px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    background: linear-gradient(rgba(0,0,0,0), rgb(255,255,255));
+
+    position: absolute;
+    left: 0;
+    bottom: -200px;
+
+    transition: all .7s ease-in-out;
+}
+.con4 .tab-gallery .gall-slider li:hover p {
+    bottom: 0;
+}
+
+
+
+
+/**** 페이저 네비게이션 ***********************************************************************************************/
+.side-pager {
+    position: fixed;
+    left: 150px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 99;
+
+    /* outline: 1px solid lime; */
+}
+
+.side-pager ul li {
+    float: none;
+    margin: 14px 0;
+}
+
+.side-pager ul li a {
+    width: 14px;
+    height: 14px;
+    border: 1px solid #333;
+    border-radius: 50%;
+    box-sizing: border-box;
+
+    position: relative;
+    /* span의 기준 */
+}
+
+.side-pager ul li a span {
+    display: block;
+    color: #333;
+    font-size: 14px;
+
+    position: absolute;
+    left: 180%;
+    top: -5px;
+
+    width: 200px;
+}
+
+.side-pager ul li.on a {
+    width: 16px;
+    height: 16px;
+    border: none;
+    background-color: #ff6357;
+
+    position: relative;
+    left: -1px;
+}
+
+.side-pager ul li.on a span {
+    font-weight: 600;
+    font-size: 1rem;
+    left: 160%;
+}

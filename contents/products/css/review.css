@@ -1,0 +1,146 @@
+@charset "utf-8";
+
+
+/* review.css */
+
+
+/**** SECTION ***********************************************************************************************/
+section {
+    width: 100%;
+    margin-top: 180px;
+    margin-bottom: 100px;
+}
+
+section .con-tit h2 {
+    font-size: 32px;
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: none;
+    /* letter-spacing: -1px; */
+}
+section .con-tit p {
+    margin-bottom: 70px;
+}
+
+
+/*** 탭메뉴 ***/
+section .tab-menu {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+    /* outline: 1px solid red; */
+}
+section .tab-menu li {
+    float: none;
+    display: inline-block;
+    margin: 0 5px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+section .tab-menu li a {
+    text-transform: uppercase;
+    color: #eee;
+    background-color: #333;
+    padding: 6px 20px;
+    font-size: 14px;
+}
+
+section .tab-menu li.on a {
+    color: #ff6357;
+}
+
+
+
+/*** 리뷰 목록 ***/
+article.review {
+    width: 90%;
+    max-width: 1620px;
+    margin: 0 auto;
+}
+
+.review ul li {
+    width: 24.25%;
+    margin-bottom: 3%;
+}
+.review ul li:nth-child(4n+1) {
+    margin-left: 0;
+}
+.review ul li~li {
+    margin-left: 1%;
+}
+
+.review ul li .review-img {
+    width: 100%;
+    margin-bottom: 18px;
+}
+.review ul li .review-img img {
+    width: 100%;
+    display: block;
+}
+
+.review ul li .info-wrap {
+    width: 100%;
+}
+.info-wrap .prod-info {
+    width: 100%;
+    height: 100px;
+    padding: 10px 0;
+    margin-bottom: 6px;
+    box-sizing: border-box;
+
+    position: relative; /* .txt-box의 기준 */
+}
+
+.info-wrap .prod-info .img-box {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    float: left;
+}
+.info-wrap .prod-info .img-box img {
+    width: 100%;
+    display: block;
+}
+
+.info-wrap .prod-info .txt-box {
+    position: absolute;
+    left: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.info-wrap .prod-info .txt-box .prod-category {
+    margin-bottom: 7px;
+}
+.prod-info .txt-box .prod-category p {
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-size: 14px;
+    margin-right: 16px;
+
+    position: relative; /* 가상요소 before의 기준! */
+}
+.prod-info .txt-box .prod-category p:last-child::before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 12px;
+    background-color: #333;
+
+    position: absolute;
+    left: -9px;
+    top: 5px;
+}
+.prod-info .txt-box h3 {
+    font-size: 16px;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+.prod-info .txt-box h3 span {
+    font-size: 12px;
+    color: #ccc;
+    font-weight: 400;
+    display: block;
+}

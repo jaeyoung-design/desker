@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가능성 그 앞으로 | DESKER</title>
+
+    <!-- 구글웹폰트 -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Italianno&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/header.css">
+
+    <link rel="stylesheet" href="css/desk.css">
+
+    <link rel="stylesheet" href="../../css/footer.css">
+
+    <!-- jQuery -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script>
+
+        $(window).scroll(function () {
+
+            var hdH = $('header').height();
+            var scTop = $(this).scrollTop();
+
+            $('header').removeClass('scrollDown');
+
+            if (scTop > hdH) {
+                $('header').addClass('scrollDown');
+            } else {
+                $('header').removeClass('scrollDown');
+            }
+
+        });
+
+        /* 헤더 기본값 - 해당메뉴 하이라이트 */
+        $(function () {
+            $('.gnb:contains("Products")').addClass('active');
+        })
+
+    </script>
+    <script src="../../js/header.js"></script>
+</head>
+
+<body>
+
+    <!-- 헤더 -->
+    <header>
+        <div class="inner">
+
+            <h1 class="logo"><a href="../../index.html">데스커</a></h1>
+
+            <nav class="navi">
+                <ul class="menu">
+                    <li>
+                        <a href="category.html" class="gnb">Products</a>
+
+                        <ul class="lnb">
+                            <li><a href="category.html">제품소개</a></li>
+                            <li><a href="review.html">제품후기</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="../activity/projects.html" class="gnb">Activity</a>
+
+                        <ul class="lnb">
+                            <li><a href="../activity/projects.html">프로젝트</a></li>
+                            <li><a href="../activity/dmagazine.html">데스커 소식</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#" class="gnb">I AM DESKER</a>
+
+                        <ul class="lnb">
+                            <li><a href="#">브랜드 스토리</a></li>
+                            <li><a href="#">BI</a></li>
+                            <li><a href="#">매장안내</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="../planning-service/about.html" class="gnb">Planning Service</a>
+
+                        <ul class="lnb">
+                            <li><a href="../planning-service/about.html">플래닝서비스 알아보기</a></li>
+                            <li><a href="#">플래닝서비스 BASIC</a></li>
+                            <li><a href="#">플래닝서비스 PRO</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#" class="gnb">Biz</a>
+
+                        <ul class="lnb">
+                            <li><a href="#">비즈니스 혜택</a></li>
+                            <li><a href="#">비즈니스 갤러리</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="icon-wrap clear">
+                <div class="search">
+                    <form action="#">
+                        <fieldset>
+                            <legend>제품검색</legend>
+
+                            <input type="text" placeholder="제품검색">
+                            <input type="submit">
+                        </fieldset>
+                    </form>
+                </div>
+
+                <div class="login">
+                    <a href="#">로그인 버튼</a>
+                </div>
+
+                <div class="all-menu">
+                    <a href="#">모든메뉴 버튼</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="bg">서브메뉴 배경</div>
+    </header>
+
+
+
+    <!-- 본문내용 -->
+    <section>
+        <!-- 컨텐츠 제목 -->
+        <div class="con-tit">
+            <h2>Desk</h2>
+            <p>기본부터 커스텀까지 나의 니즈를 읽어주는 책상</p>
+        </div>
+
+        <!-- 카테고리별 제품 -->
+        <article class="products clear">
+
+            <div class="bread-crumb">
+                <p>Prodcuts</p>
+                <p>Desk</p>
+            </div>
+
+            <ul class="category">
+                <li class="on">
+                    <a href="#motion-desk"><img src="img/products/desk_motion.jpg" alt="모션 데스크"></a>
+                    <h4 class="category-tit">
+                        <a href="#motion-desk">
+                            <span>sit stand and move</span>
+                            모션 데스크
+                        </a>
+                    </h4>
+                </li>
+
+                <li>
+                    <a href="#"><img src="img/products/desk_basic.jpg" alt="베이직 데스크"></a>
+                    <h4 class="category-tit">
+                        <a href="#">
+                            <span>책상의 기본을 먼저 생각합니다</span>
+                            베이직 데스크
+                        </a>
+                    </h4>
+                </li>
+
+                <li>
+                    <a href="#"><img src="img/products/desk_computer.jpg" alt="컴퓨터 데스크"></a>
+                    <h4 class="category-tit">
+                        <a href="#">
+                            <span>작업 데스크의 새로운 표준</span>
+                            컴퓨터 데스크
+                        </a>
+                    </h4>
+                </li>
+
+                <li>
+                    <a href="#"><img src="img/products/desk_desktop.jpg" alt="노트북 데스크"></a>
+                    <h4 class="category-tit">
+                        <a href="#">
+                            <span>기능적인 깔끔함</span>
+                            노트북 데스크
+                        </a>
+                    </h4>
+                </li>
+
+                <li>
+                    <a href="#"><img src="img/products/desk_screen.jpg" alt="하부가림판 데스크"></a>
+                    <h4 class="category-tit">
+                        <a href="#">
+                            <span>안심하고 사용할 수 있는 작업환경</span>
+                            하부가림판 데스크
+                        </a>
+                    </h4>
+                </li>
+
+                <li>
+                    <a href="#"><img src="img/products/desk_deskset.jpg" alt="책상 세트"></a>
+                    <h4 class="category-tit">
+                        <a href="#">
+                            <span>최적의 학습공간을 위한 선택</span>
+                            책상 세트
+                        </a>
+                    </h4>
+                </li>
+
+                <li>
+                    <a href="#"><img src="img/products/desk_focus.jpg" alt="집중형 데스크"></a>
+                    <h4 class="category-tit">
+                        <a href="#">
+                            <span>심플한 디자인 위에 최고의 효율</span>
+                            집중형 데스크
+                        </a>
+                    </h4>
+                </li>
+
+                <li>
+                    <a href="#"><img src="img/products/desk_gaming.jpg" alt="게이밍 데스크"></a>
+                    <h4 class="category-tit">
+                        <a href="#">
+                            <span>desker 플레이를 바꾸다</span>
+                            게이밍 데스크
+                        </a>
+                    </h4>
+                </li>
+
+                <li>
+                    <a href="#"><img src="img/products/desk_standing.jpg" alt="스탠딩 데스크"></a>
+                    <h4 class="category-tit">
+                        <a href="#">
+                            <span>balance with motion</span>
+                            스탠딩 데스크
+                        </a>
+                    </h4>
+                </li>
+            </ul>
+
+            <div class="prod-des">
+
+                <ul class="tab-menu">
+                    <li class="on"><a href="#control">컨트롤 스위치</a></li>
+                    <li><a href="#smart">스마트</a></li>
+                    <li><a href="#plus">플러스</a></li>
+                    <li><a href="#premium">프리미엄</a></li>
+                </ul>
+
+
+                <div class="img-box">
+
+                    <!-- 이전, 다음버튼 -->
+                    <div class="btn prev"><a href="#">이전</a></div>
+                    <div class="btn next"><a href="#">다음</a></div>
+
+                    <!-- 
+                        .viewer : 제품 카테고리별 이미지 그룹을 담는 부모(실제 보여지는 이미지구역)
+                        .img-wrap : 제품 카테고리별 이미지 그룹
+                    -->
+                    <div id="motion-desk" class="viewer">
+
+                        <div id="control" class="img-wrap">
+                            <img src="img/products/desk_motion_control_01.jpg"
+                                alt="간편한 높이조절 : 책상 상판에 설치된 컨트롤 스위치로 간편하게 높이 조절 및 사용자가 원하는 높이를 저장 할 수 있습니다. #3가지 높이저장 #스위치 잠금">
+                            <img src="img/products/desk_motion_control_02.jpg" alt="앉아서도 서서도 편안한 높이 : 사용자의 체형 및 상황에 맞춰 가장 편안한 높이로 세팅할 수 있으며, 32mm/Sec의 속도, 48db 이하의 저소음으로 작동감 또한 훌륭합니다.
+                                ">
+                            <img src="img/products/desk_motion_control_03.jpg"
+                                alt="뛰어난 품질 : 10만회의 내구성 테스트를 통과한 고품질의 높이조절 하드웨어를 적용하였습니다. -KTC 한국기계전기전자시험연구원-">
+                            <img src="img/products/desk_motion_control_04.jpg"
+                                alt="5가지 색상 : WWWW, MLWW, MLFK, MACKF, FKFK">
+                        </div>
+
+                        <div id="smart" class="img-wrap">
+                            <img src="img/products/desk_motion_smart_01.jpg" alt="">
+                            <img src="img/products/desk_motion_smart_02.jpg" alt="">
+                            <img src="img/products/desk_motion_smart_03.jpg" alt="">
+                            <img src="img/products/desk_motion_smart_04.jpg" alt="">
+                        </div>
+
+                        <div id="plus" class="img-wrap">
+                            <img src="img/products/desk_motion_plus_01.jpg" alt="">
+                            <img src="img/products/desk_motion_plus_02.jpg" alt="">
+                            <img src="img/products/desk_motion_plus_03.jpg" alt="">
+                            <img src="img/products/desk_motion_plus_04.jpg" alt="">
+                        </div>
+
+                        <div id="premium" class="img-wrap">
+                            <img src="img/products/desk_motion_premium_01.jpg" alt="">
+                            <img src="img/products/desk_motion_premium_02.jpg" alt="">
+                            <img src="img/products/desk_motion_premium_03.jpg" alt="">
+                            <img src="img/products/desk_motion_premium_04.jpg" alt="">
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </article>
+
+        <!-- 카테고리별 인스타그램 게시물 -->
+        <article class="prod-insta">
+
+            <div class="con-tit">
+                <h2>#desker</h2>
+                <p>피드 속 데스커 제품들을 확인해 보세요!</p>
+            </div>
+
+            <ul>
+                <li>
+                    <div class="insta-img">
+                        <img src="img/products/desker_insta_01.jpg" alt="">
+
+                        <a href="#" class="view-prod">해당 제품 보기</a>
+                    </div>
+
+                    <div class="info-wrap">
+                        <div class="prod-info">
+                            <div class="img-box"><img src="img/products/desker_insta_prod01.png"
+                                    alt="W1400*D600 베이직 데스크"></div>
+
+                            <div class="txt-box">
+                                <div class="prod-category">
+                                    <p>desk</p>
+                                    <p>베이직 데스크</p>
+                                </div>
+
+                                <h3>
+                                    W1400*D600 베이직 데스크
+                                    <span>DSAD214</span>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="insta-img">
+                        <img src="img/products/desker_insta_02.jpg" alt="">
+
+                        <a href="#" class="view-prod">해당 제품 보기</a>
+                    </div>
+
+                    <div class="info-wrap">
+                        <div class="prod-info">
+                            <div class="img-box"><img src="img/products/desker_insta_prod02.png"
+                                    alt="W1200*D600 모션데스크 스마트"></div>
+
+                            <div class="txt-box">
+                                <div class="prod-category">
+                                    <p>desk</p>
+                                    <p>모션 데스크</p>
+                                </div>
+
+                                <h3>
+                                    W1200*D600 모션데스크 스마트
+                                    <span>DSDCM1206</span>
+                                </h3>
+                            </div>
+                        </div>
+
+                        <div class="prod-info">
+                            <div class="img-box"><img src="img/products/desker_insta_prod02-2.png" alt="W1200 펠트 전면스크린">
+                            </div>
+
+                            <div class="txt-box">
+                                <div class="prod-category">
+                                    <p>partition&amp;screen</p>
+                                    <p>펠트스크린</p>
+                                </div>
+
+                                <h3>
+                                    W1200 펠트 전면스크린
+                                    <span>DSBF712</span>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="insta-img">
+                        <img src="img/products/desker_insta_03.jpg" alt="">
+
+                        <a href="#" class="view-prod">해당 제품 보기</a>
+                    </div>
+
+                    <div class="info-wrap">
+                        <div class="prod-info">
+                            <div class="img-box"><img src="img/products/desker_insta_prod03.png"
+                                    alt="W1600*D800 타원형 테이블"></div>
+
+                            <div class="txt-box">
+                                <div class="prod-category">
+                                    <p>table</p>
+                                    <p>테이블</p>
+                                </div>
+
+                                <h3>
+                                    W1600*D800 타원형 테이블
+                                    <span>DSTAA1608R</span>
+                                </h3>
+                            </div>
+                        </div>
+
+                        <div class="prod-info">
+                            <div class="img-box"><img src="img/products/desker_insta_prod03-2.png" alt="버튼 리프트업 화이트">
+                            </div>
+
+                            <div class="txt-box">
+                                <div class="prod-category">
+                                    <p>seating</p>
+                                    <p>인테리어 체어</p>
+                                </div>
+
+                                <h3>
+                                    버튼 리프트업 화이트
+                                    <span>DHMN803W</span>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="insta-img">
+                        <img src="img/products/desker_insta_04.jpg" alt="">
+
+                        <a href="#" class="view-prod">해당 제품 보기</a>
+                    </div>
+
+                    <div class="info-wrap">
+                        <div class="prod-info">
+                            <div class="img-box"><img src="img/products/desker_insta_prod04.png"
+                                    alt="W1200*D700 컴퓨터데스크 2.0"></div>
+
+                            <div class="txt-box">
+                                <div class="prod-category">
+                                    <p>desk</p>
+                                    <p>컴퓨터 데스크</p>
+                                </div>
+
+                                <h3>
+                                    W1200*D700 컴퓨터데스크 2.0
+                                    <span>DSDBB1207</span>
+                                </h3>
+                            </div>
+                        </div>
+
+                        <div class="prod-info">
+                            <div class="img-box"><img src="img/products/desker_insta_prod04-2.png" alt="T50 F 화이트">
+                            </div>
+
+                            <div class="txt-box">
+                                <div class="prod-category">
+                                    <p>seating</p>
+                                    <p>테스크 체어</p>
+                                </div>
+
+                                <h3>
+                                    T50 F 화이트
+                                    <span>DHTN603F</span>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+
+        </article>
+    </section>
+
+
+
+    <!-- 푸터 -->
+    <footer>
+        <div class="inner">
+
+            <div class="ftop clear">
+                <div class="company ">
+                    <div class="co-info">
+                        <a href="#"><img src="img/logo_w.png" alt="데스커"></a>
+
+                        <p>(주)일룸</p>
+                        <p class="ceo">대표이사 정보은</p>
+                        <p>서울특별시 송파구 오금로 311</p>
+                        <p>사업자등록번호 215-86-93600</p>
+                    </div>
+
+                    <div class="sns-icon clear">
+                        <div class="sns">
+                            <a href="#"><img src="img/icon_sns_facebook.png" alt="페이스북 바로가기"></a>
+                        </div>
+
+                        <div class="sns">
+                            <a href="#"><img src="img/icon_sns_instagram.png" alt="인스타그램 바로가기"></a>
+                        </div>
+
+                        <div class="sns">
+                            <a href="#"><img src="img/icon_sns_naver.png" alt="네이버블로그 바로가기"></a>
+                        </div>
+
+                        <div class="sns">
+                            <a href="#"><img src="img/icon_sns_youtube.png" alt="유튜브 바로가기"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="site-map">
+                    <ul class="site-map-gnb">
+                        <li>
+                            <h3>Products</h3>
+
+                            <ul class="site-map-lnb">
+                                <li><a href="#">제품소개</a></li>
+                                <li><a href="#">제품후기</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <h3>Activity</h3>
+
+                            <ul class="site-map-lnb">
+                                <li><a href="#">프로젝트</a></li>
+                                <li><a href="#">데스커 소식</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <h3>I AM DESKER</h3>
+
+                            <ul class="site-map-lnb">
+                                <li><a href="#">브랜드 스토리</a></li>
+                                <li><a href="#">BI</a></li>
+                                <li><a href="#">매장안내</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <h3>Planning Service</h3>
+
+                            <ul class="site-map-lnb">
+                                <li><a href="#">플래닝서비스 알아보기</a></li>
+                                <li><a href="#">플래닝서비스 BASIC</a></li>
+                                <li><a href="#">플래닝서비스 PRO</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <h3>Biz</h3>
+
+                            <ul class="site-map-lnb">
+                                <li><a href="#">비즈니스 혜택</a></li>
+                                <li><a href="#">비즈니스 갤러리</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="fbottom clear">
+                <ul class="policy">
+                    <li><a href="#">윤리신고센터</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                </ul>
+
+                <p>Copyright 2022 iloom CO. LTD. All right reserved.</p>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
