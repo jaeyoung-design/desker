@@ -31,6 +31,8 @@ section .prod-category {
     width: calc(97% / 3);
     margin-bottom: 2%;
     overflow: hidden;
+    box-sizing: border-box;
+    border: 4px solid rgba(0,0,0,0);
 
     position: relative; /* 가상요소 before & .caption의 기준 */
     /* outline: 2px solid red; */
@@ -40,6 +42,10 @@ section .prod-category {
 }
 .prod-category ul.prod-wrap .prod~.prod {
     margin-left: 1.5%;
+}
+
+.prod-category ul.prod-wrap li.prod:first-child {
+    border: 4px solid #ff6357;
 }
 
 .prod-category ul.prod-wrap li.prod img {
