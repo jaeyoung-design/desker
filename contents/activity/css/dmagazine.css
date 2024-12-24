@@ -82,9 +82,8 @@ section .tab-menu li.on a {
 }
 
 
-/*** ALL ***/
-/* .news-wrap #all {} */
-.news-wrap #all li {
+/*** 뉴스 컨텐츠 ***/
+.news-wrap li {
     width: 32%;
     height: 350px;
     margin-bottom: 30px;
@@ -92,33 +91,31 @@ section .tab-menu li.on a {
     position: relative; /* .news-date의 기준 */
     /* outline: 1px solid red; */
 }
-.news-wrap #all li:nth-child(3n+1) {
+.news-wrap li:nth-child(3n+1) {
     margin-left: 0;
 }
-.news-wrap #all li~li {
+.news-wrap li~li {
     margin-left: 2%;
 }
 
-.news-wrap #all li a {
+.news-wrap li a {
     width: 100%;
     margin-bottom: 10px;
 }
-.news-wrap #all li a img {
+.news-wrap li a img {
     width: 100%;
     display: block;
 }
 
-/* .news-wrap #all li .news-txt {
-    background-color: lightblue;
-} */
-.news-wrap #all li .news-txt .news-title {
+
+.news-wrap li .news-txt .news-title {
     font-size: 1.1rem;
     word-break: keep-all;
 }
-.news-wrap #all li .news-txt .news-des {
+.news-wrap li .news-txt .news-des {
     color: #666;
 }
-.news-wrap #all li .news-txt .news-date {
+.news-wrap li .news-txt .news-date {
     font-size: 0.9rem;
     color: #b0b0b0;
 
