@@ -75,7 +75,7 @@ section .tab-menu li.on a {
 
 /**** 뉴스목록 ****/
 .news-wrap {
-    width: 1280px;
+    width: 1200px;
     margin: -200px auto 50px;
 
     /* outline: 2px solid blue; */
