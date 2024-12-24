@@ -81,7 +81,7 @@ $(document).ready(function () {
         //.start 페이지
         if (pageCount === 1) {
             line1.delay(1000).animate({
-                width: '105%'
+                width: '103%'
             }, 800);
             $('.start .img-box').delay(800).fadeIn(500);
         } else {
@@ -92,7 +92,7 @@ $(document).ready(function () {
         //.goal 페이지
         if (pageCount === 2) {
             line2.delay(1000).animate({
-                width: '105%'
+                width: '103%'
             }, 800);
             $('.goal .img-box').delay(800).fadeIn(500);
         } else {

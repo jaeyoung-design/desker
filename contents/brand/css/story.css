@@ -2,9 +2,9 @@
 
 
 
-/* html, body {
+html, body {
     overflow: hidden;
-} */
+}
 
 /**** section ***********************************************************************************************/
 section {
@@ -65,8 +65,9 @@ section .img-box img {
 }
 
 section .txt-box h3 {
-    font-size: 24px;
-    font-size: 1.5rem;
+    font-size: 48px;
+    font-size: 3rem;
+    font-weight: 400;
     text-transform: uppercase;
     margin-bottom: 45px;
     display: inline-block;
@@ -76,17 +77,17 @@ section .txt-box h3 {
 section .txt-box h3 span {
     content: "";
     display: block;
-    height: 20px;
+    height: 34px;
     background-color: #ff6357;
 
     /* 최종설정 */
-    width: 105%;
+    width: 103%;
     /* 초기설정 */
     width: 0;
 
     position: absolute;
-    left: -2.5%;
-    bottom: 1px;
+    left: -1.5%;
+    bottom: 8px;
     z-index: -1;
 }
 section .txt-box p {
@@ -97,7 +98,7 @@ section .txt-box p {
 
 
 /**** start - 데스커의 시작 ****/
-section .start {}
+/* section .start {} */
 section .start .img-box {
     float: right;
     display: none;
@@ -109,7 +110,7 @@ section .start .txt-box {
 
 
 /**** goal - 데스커의 목표 ****/
-section .goal {}
+/* section .goal {} */
 section .goal .img-box {
     float: left;
     display: none;
@@ -130,7 +131,7 @@ section .fin {
 section .fin .txt-box {
     text-align: center;
 }
-section .fin .txt-box p {}
+/* section .fin .txt-box p {} */
 section .fin .txt-box p.slogan {
     margin-top: 50px;
     margin-bottom: 35px;
