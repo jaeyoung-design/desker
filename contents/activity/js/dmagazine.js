@@ -47,6 +47,7 @@ $(document).ready(function () {
 
         $(this).parent().addClass('on').siblings().removeClass('on');
 
+        //기본 컨텐츠 수 6 이하일때 load-more 버튼 숨기기
         var onNews = $('.tab-menu .on').find('a').attr('href');
         var onNewsCount = $(onNews).find('li').length;
 
