@@ -457,7 +457,7 @@ article.social {
 article.social .follow {
     width: 100%;
     /* overflow: hidden; */
-    margin-bottom: 200px;
+    margin-bottom: 250px;
 }
 
 article.social .follow .con-tit p {
@@ -487,18 +487,19 @@ article.social .follow .instagram p.insta-account a {
     font-size: 1.125rem;
 }
 
+/** 인스타그램 썸네일 **/
 article.social .follow .instagram ul.insta-thumb {
     /* outline: 2px solid red; */
 
     width: 200%;
-    /* margin-left: -135px; */
+    margin-left: -9%;
 }
 article.social .follow .instagram ul.insta-thumb li {
-    width: 270px;
+    width: 8.33%;
     float: left;
 }
 article.social .follow .instagram ul.insta-thumb li~li {
-    margin-left: 10px;
+    margin-left: 0.2%;
 }
 article.social .follow .instagram ul.insta-thumb li a img {
     width: 100%;
