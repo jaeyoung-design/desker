@@ -55,12 +55,12 @@ $(document).ready(function () {
     $('.gall-img').eq(1).find('.caption').css('display', 'block');
 
     //이전img 등장
-    $('.gall-img').first().click(function(){
+    $('.viewer .prev-box').first().click(function(){
         slideImg(0);
         capChg();
     });
     //다음img 등장
-    $('.gall-img').last().click(function(){
+    $('.viewer .next-box').last().click(function(){
         slideImg(1);
         capChg();
     });
