@@ -532,18 +532,18 @@ article.social .follow .instagram ul.insta-thumb {
     position: relative; /* .bar의 기준 */
 }
 .instagram .scroll .bar {
-    width: 24px;
-    height: 24px;
-    background-color: #333;
-    border-radius: 50%;
+    width: 300px;
+    height: 14px;
+    background-color: #666;
+    border-radius: 50px;
     font-size: 0;
 
     position: absolute;
     left: 0;
-    top: -9.5px;
+    top: -4.5px;
 }
 .instagram .scroll .bar:hover {
-    background-color: #ff6357;
+    background-color: #333;
     cursor: pointer;
 }
 
