@@ -2,10 +2,10 @@
 
 
 
-$(document).ready(function(){
+$(document).ready(function () {
 
     /* 메뉴구현 */
-    
+
     //초기설정
     //.lnb, .bg => display: none;
     $('.lnb, .bg').hide();
@@ -13,33 +13,30 @@ $(document).ready(function(){
 
     //헤더에 마우스엔터 하면, 클래스 scrollDown 추가
     //단, scrollTop == 0 이면, 클래스 scrollDown 제거
-    $('header').mouseenter(function () {
-
+    $('header').on('mouseenter', function () {
         $(this).addClass('scrollDown');
-
     });
-    $('header').mouseleave(function(){
+    $('header').on('mouseleave', function () {
+        //문서로부터의 높잇값 차이로 클래스 제거조건 만들기!
+        var bodyT = $('body').offset().top; //0
+        //position:fixed; 상태로 스크롤하면 값 변경
+        var hdT = $('header').offset().top;
 
-        var hdH = $('header').height();
-        var scTop = $(window).scrollTop();
-
-        if(scTop <= hdH) {
+        if (hdT === bodyT) {
             $(this).removeClass('scrollDown');
-
-            return false;
         }
-
     });
+
 
 
     //서브메뉴 슬라이드다운
-    $('.navi, .bg').hover(function(){
+    $('.navi, .bg').hover(function () {
 
         //mouseenter
         $(this).parents('header').addClass('scrollDown');
         $('.lnb, .bg').stop().slideDown(600);
 
-    }, function(){
+    }, function () {
 
         //mouseleave
         //$(this).parents('header').removeClass('scrollDown');
@@ -51,7 +48,7 @@ $(document).ready(function(){
     //검색버튼 호버하면, 검색바 등장
     var searchBar = $('.search input[type="text"]');
 
-    $('.search').hover(function(){
+    $('.search').hover(function () {
         //mouseenter
         //검색바 등장
         searchBar.stop().animate({
@@ -60,28 +57,28 @@ $(document).ready(function(){
             border: '1px solid #333'
         });
 
-    }, function(){
+    }, function () {
         //mouseleave
         //검색바 숨기기
         searchBar.stop().animate({
             width: 0
-        }, 800, function(){
-            $(this).css('border','none');
+        }, 800, function () {
+            $(this).css('border', 'none');
         });
-        $('.search input::placeholder').css('display','none')
+        $('.search input::placeholder').css('display', 'none')
 
     });
 
 
 
     //해당 .gnb메뉴에 하이라이트 효과
-    
-    $('.menu > li').hover(function(){
+
+    $('.menu > li').hover(function () {
         //mouseenter
         $(this).find('.gnb').addClass('highlight');
         $(this).siblings().find('.gnb').removeClass('highlight');
 
-    }, function(){
+    }, function () {
         //mouseleave
         $(this).find('.gnb').removeClass('highlight');
     });
