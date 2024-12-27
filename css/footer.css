@@ -128,7 +128,7 @@ footer .fbottom ul.policy li~li::before {
 
     position: absolute;
     left: -15px;
-    top: 4px;
+    top: 6px;
 }
 footer .fbottom ul.policy li:hover a {
     text-decoration: underline;
