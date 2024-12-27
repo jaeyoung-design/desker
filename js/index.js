@@ -117,6 +117,46 @@ $(document).ready(function () {
     });
 
 
+    ////////////// 영역6. 데스커 인스타그램 //////////////
+    //썸네일 이미지 슬라이드
+    $('.bar').draggable({
+        axis: 'x', //x축으로만 이동
+        containment: 'parent' //작동범위: 부모요소 만큼
+    });
+
+    var scrollW = $('.scroll').width();
+    var barW = $('.bar').width();
+    //스크롤바가 이동할 수 있는 최대값
+    var barMax = scrollW - barW;
+    //스크롤바 이동값
+    var barMove;
+
+    var imgW = $('.insta-thumb').width(); //전체 이미지를 담는 ul의 너비
+    console.log(imgW);
+    var viewW = $('.instagram').width(); //실제 보여지는 공간의 너비
+    console.log(viewW);
+    //이미지의 최대 이동값
+    var imgMax = imgW - viewW;
+    //이미지 이동값 (초깃값-0)
+    var imgMove = 0;
+
+    $('.bar').on('drag', function(){
+
+        //스크롤바 이동값 구하기
+        barMove = $(this).position().left;
+        console.log('스크롤바 이동값: ' + barMove);
+
+        //이미지 이동값 구하기
+        imgMove = barMove * imgMax / barMax;
+        console.log('이미지 이동값: ' + imgMove);
+        
+        $('.insta-thumb').css({
+            left: -imgMove + 'px'
+        }, 300);
+
+    });
+
+
 
 });
 
