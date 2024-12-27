@@ -132,9 +132,7 @@ $(document).ready(function () {
     var barMove;
 
     var imgW = $('.insta-thumb').width(); //전체 이미지를 담는 ul의 너비
-    console.log(imgW);
     var viewW = $('.instagram').width(); //실제 보여지는 공간의 너비
-    console.log(viewW);
     //이미지의 최대 이동값
     var imgMax = imgW - viewW;
     //이미지 이동값 (초깃값-0)
@@ -144,11 +142,11 @@ $(document).ready(function () {
 
         //스크롤바 이동값 구하기
         barMove = $(this).position().left;
-        console.log('스크롤바 이동값: ' + barMove);
+        //console.log('스크롤바 이동값: ' + barMove);
 
         //이미지 이동값 구하기
         imgMove = barMove * imgMax / barMax;
-        console.log('이미지 이동값: ' + imgMove);
+        //console.log('이미지 이동값: ' + imgMove);
         
         $('.insta-thumb').css({
             left: -imgMove + 'px'
