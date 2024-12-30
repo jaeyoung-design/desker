@@ -3,11 +3,15 @@
 
 /* review.css */
 
+body {
+    position: relative; /* #modal의 기준 */
+}
+
 
 /**** SECTION ***********************************************************************************************/
 section {
     width: 100%;
-    margin-top: 180px;
+    padding-top: 180px;
     margin-bottom: 100px;
 }
 
@@ -72,10 +76,12 @@ article.review {
 .review ul li .review-img {
     width: 100%;
     margin-bottom: 18px;
+    overflow: hidden; /* 호버했을때 img 크기조절함 */
 }
 .review ul li .review-img img {
     width: 100%;
     display: block;
+    transition: all .7s;
 }
 
 .review ul li .info-wrap {
@@ -143,4 +149,179 @@ article.review {
     color: #ccc;
     font-weight: 400;
     display: block;
+}
+
+
+/*** 모달 팝업페이지 ***/
+/* 호버효과 디자인 - 초기설정 */
+#desk li .review-img {
+    position: relative; /* 테두리의 기준 */
+}
+#desk li .review-img::before {
+    /* 위쪽 테두리 */
+    content: "";
+    display: block;
+    width: 0;
+    height: 5px;
+    background-color: #ff6357;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    transition: width .2s linear .6s;
+}
+#desk li .review-img::after {
+    /* 아래쪽 테두리 */
+    content: "";
+    display: block;
+    width: 0;
+    height: 5px;
+    background-color: #ff6357;
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    transition: width .2s linear .2s;
+}
+#desk li .review-img > span::before {
+    /* 왼쪽 테두리 */
+    content: "";
+    display: block;
+    width: 5px;
+    height: 0;
+    background-color: #ff6357;
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    transition: height .2s linear 0s;
+}
+#desk li .review-img > span::after {
+    /* 오른쪽 테두리 */
+    content: "";
+    display: block;
+    width: 5px;
+    height: 0;
+    background-color: #ff6357;
+
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    transition: height .2s linear .4s;
+}
+
+
+#desk li:first-child .review-img:hover img {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+#desk li:first-child .review-img:hover::before {
+    /* 위쪽 테두리 */
+    width: 100%;
+    transition: width .2s linear 0s;
+}
+#desk li:first-child .review-img>span:hover::after {
+    /* 오른쪽 테두리 */
+    height: 100%;
+    transition: height .2s linear .2s;
+}
+#desk li:first-child .review-img:hover::after {
+    /* 아래쪽 테두리 */
+    width: 100%;
+    transition: width .2s linear .4s;
+}
+#desk li:first-child .review-img>span:hover::before {
+    /* 왼쪽 테두리 */
+    height: 100%;
+    transition: height .2s linear .6s;
+}
+
+
+/* 팝업 페이지 */
+#modal {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+}
+#modal .pop-up {
+    width: 60%;
+    height: 70%;
+    background-color: #fff;
+    box-shadow: 0 0 6px #666;
+
+    margin: 100px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+.pop-up .close {
+    float: right;
+    width: 30px;
+    height: 30px;
+    background: url(../img/icon_close.png) no-repeat center/cover;
+    margin-bottom: 40px;
+    font-size: 0;
+    cursor: pointer;
+}
+
+.pop-up .review-img {
+    float: left;
+    width: 60%;
+    margin-top: 70px;
+}
+.pop-up .review-img img {
+    width: 100%;
+    display: block;
+}
+
+.pop-up .review-box {
+    float: right;
+    width: 37%;
+    height: 100%;
+    margin-left: 3%;
+}
+
+.pop-up .review-box .prod-info {
+    margin-bottom: 10px;
+}
+
+.pop-up .review-box .reviewer {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.pop-up .review-box .reviewer span:last-child {
+    margin-left: 10px;
+    color: #999;
+    position: relative; /* 가상요소 before의 기준 */
+}
+.pop-up .review-box .reviewer span:last-child::before {
+    content: "";
+    display: block;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: #999;
+
+    position: absolute;
+    left: -7px;
+    top: 7px;
+}
+
+.pop-up .review-box .review-des {
+    font-size: 15px;
+    color: #555;
+    height: 60%;
+    padding-right: 16px;
+    box-sizing: border-box;
+    overflow-y: scroll;
 }
