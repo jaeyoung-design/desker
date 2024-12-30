@@ -524,7 +524,7 @@ article.social .follow .instagram ul.insta-thumb {
 /** 썸네일 스크롤바 **/
 .instagram .scroll {
     width: 80%;
-    height: 5px;
+    height: 12px;
     border-radius: 20px;
     margin: 0 auto 20px;
     background-color: #b0b0b0;
@@ -533,14 +533,14 @@ article.social .follow .instagram ul.insta-thumb {
 }
 .instagram .scroll .bar {
     width: 300px;
-    height: 14px;
+    height: 100%;
     background-color: #666;
     border-radius: 50px;
     font-size: 0;
 
     position: absolute;
     left: 0;
-    top: -4.5px;
+    top: 0;
 }
 .instagram .scroll .bar:hover {
     background-color: #333;
