@@ -1,0 +1,289 @@
+@charset "utf-8";
+
+/* brand(I AM DESKER) >> 매장안내 */
+/* store.css */
+
+
+
+/**** SECTION ***********************************************************************************************/
+section > .con-tit {
+    width: 100%;
+    height: 500px;
+    padding: 230px 0 180px;
+    box-sizing: border-box;
+    background: url(../img/store/00_store_main.jpg) no-repeat center/cover;
+    margin-bottom: 120px;
+}
+section > .con-tit h2 {
+    color: #eee;
+    font-size: 32px;
+    font-size: 2rem;
+    margin-bottom: 16px;
+    text-transform: none;
+}
+section > .con-tit p {
+    color: #d9d9d9;
+    font-size: 20px;
+    font-size: 1.25rem;
+}
+
+
+section article.store {
+    width: 1280px;
+    height: 1000px;
+    margin: 0 auto;
+}
+
+/**** 매장 표시 지도 ****/
+article.store .map {
+    float: left;
+    width: 40%;
+
+    position: relative; /* .site & li(지역 핀버튼)의 기준 */
+}
+
+article.store .map img {
+    width: 100%;
+    display: block;
+}
+
+article.store .map .site {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+article.store .map .site li {
+    width: 50px;
+    height: 50px;
+
+    position: absolute;
+    transition: all .3s;
+}
+article.store .map .site li:hover {
+    transform: translateY(-6px);
+}
+article.store .map .site li a {
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.site .seoul {
+    left: 115px;
+    top: 135px;
+}
+.site .seoul > a {
+    background-image: url(../img/store_pin_seoul2.png);
+}
+.site .seoul:hover > a {
+    background-image: url(../img/store_pin_seoul1.png);
+}
+.site .seoul.on > a {
+    background-image: url(../img/store_pin_seoul1.png);
+}
+
+.site .incheon {
+    left: 73px;
+    top: 145px;
+}
+.site .incheon > a {
+    background-image: url(../img/store_pin_incheon2.png);
+}
+.site .incheon:hover > a {
+    background-image: url(../img/store_pin_incheon1.png);
+}
+.site .incheon.on > a {
+    background-image: url(../img/store_pin_incheon1.png);
+}
+
+.site .gyeonggi {
+    left: 170px;
+    top: 170px;
+}
+.site .gyeonggi > a {
+    background-image: url(../img/store_pin_gyeonggi2.png);
+}
+.site .gyeonggi:hover > a {
+    background-image: url(../img/store_pin_gyeonggi1.png);
+}
+.site .gyeonggi.on > a {
+    background-image: url(../img/store_pin_gyeonggi1.png);
+}
+
+.site .daejeon {
+    left: 170px;
+    top: 340px;
+}
+.site .daejeon > a {
+    background-image: url(../img/store_pin_daejeon2.png);
+}
+.site .daejeon:hover > a {
+    background-image: url(../img/store_pin_daejeon1.png);
+}
+.site .daejeon.on > a {
+    background-image: url(../img/store_pin_daejeon1.png);
+}
+
+.site .daegu {
+    left: 330px;
+    top: 425px;
+}
+.site .daegu > a {
+    background-image: url(../img/store_pin_daegu2.png);
+}
+.site .daegu:hover > a {
+    background-image: url(../img/store_pin_daegu1.png);
+}
+.site .daegu.on > a {
+    background-image: url(../img/store_pin_daegu1.png);
+}
+
+.site .busan {
+    left: 400px;
+    top: 530px;
+}
+.site .busan > a {
+    background-image: url(../img/store_pin_busan2.png);
+}
+.site .busan:hover > a {
+    background-image: url(../img/store_pin_busan1.png);
+}
+.site .busan.on > a {
+    background-image: url(../img/store_pin_busan1.png);
+}
+
+.site .gwangju {
+    left: 92px;
+    top: 540px;
+}
+.site .gwangju > a {
+    background-image: url(../img/store_pin_gwangju2.png);
+}
+.site .gwangju:hover > a {
+    background-image: url(../img/store_pin_gwangju1.png);
+}
+.site .gwangju.on > a {
+    background-image: url(../img/store_pin_gwangju1.png);
+}
+
+
+/**** 지역별 매장 ****/
+article.store .local-store {
+    float: right;
+    width: 57%;
+}
+
+.local-store h3 {
+    font-size: 30px;
+    padding-left: 50px;
+    background: url(../img/store_pin.png) no-repeat left/contain;
+    margin-bottom: 30px;
+}
+
+/* 실제 보여지는 매장정보 공간 */
+.local-store .info-viewer {
+    height: 650px;
+    overflow: hidden;
+}
+/* 모든 li를 담는 부모 ul */
+.local-store .info-wrap {
+    float: left;
+    width: calc(100% - 12px);
+
+    /* 스크롤을 위한 좌표값 */
+    position: relative;
+    top: 0;
+}
+/* 각각의 li(매장정보) */
+.local-store .info-wrap li {
+    float: none;
+    height: 200px;
+
+    position: relative; /* .store-info의 기준 */
+}
+.local-store .info-wrap li~li {
+    margin-top: 16px;
+}
+.local-store .info-wrap li::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.local-store .info-wrap li > div {
+    float: left;
+}
+
+.local-store .info-wrap li .store-img {
+    width: 48%;
+    height: 100%;
+}
+.local-store .info-wrap li .store-img img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.local-store .info-wrap li .store-info {
+    /* width: 47%;
+    margin-left: 3%; */
+
+    position: absolute;
+    left: 50%;
+    bottom: 4px;
+}
+.local-store .info-wrap li .store-info h4 {
+    margin-bottom: 20px;
+}
+
+.local-store .info-wrap li .store-info p {
+    font-size: 14px;
+    padding-left: 24px;
+
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 16px, 16px;
+}
+.local-store .info-wrap li .store-info p~p {
+    margin-top: 6px;
+}
+.local-store .info-wrap li .store-info .address {
+    background-image: url(../img/pin_address.png);
+}
+.local-store .info-wrap li .store-info .tel {
+    background-image: url(../img/pin_phone.png);
+}
+.local-store .info-wrap li .store-info .time {
+    background-image: url(../img/pin_time.png);
+}
+
+
+/**** 지역별 매장 - 스크롤바 ****/
+.local-store .info-viewer .scroll {
+    width: 12px;
+    height: 100%;
+    border-radius: 30px;
+    background-color: #b0b0b0;
+    float: left;
+
+    position: relative; /* .bar의 기준 */
+}
+.local-store .info-viewer .scroll .bar {
+    width: 100%;
+    height: 200px;
+    border-radius: 30px;
+    background-color: #666;
+    font-size: 0;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.local-store .info-viewer .scroll .bar:hover {
+    background-color: #333;
+    cursor: pointer;
+}

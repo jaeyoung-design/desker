@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가능성 그 앞으로 | DESKER</title>
+
+    <!-- 구글웹폰트 -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Italianno&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/header.css">
+
+    <link rel="stylesheet" href="css/store.css">
+
+    <link rel="stylesheet" href="../../css/footer.css">
+
+    <!-- jQuery -->
+    <script src="../../js/jquery-1.12.4.min.js"></script>
+    <script src="../../js/jquery-ui-1.12.1.min.js"></script>
+    <script>
+
+        /* 헤더 기본값 설정 */
+        $(window).scroll(function () {
+
+            var hdH = $('header').height();
+            var scTop = $(this).scrollTop();
+
+            $('header').removeClass('scrollDown');
+
+            if (scTop > hdH) {
+                $('header').addClass('scrollDown');
+            } else {
+                $('header').removeClass('scrollDown');
+            }
+
+        });
+
+        /* 해당메뉴 하이라이트 */
+        $(function () {
+            $('.gnb:contains("I AM DESKER")').addClass('active');
+        })
+
+    </script>
+    <script src="../../js/header.js"></script>
+    <script src="js/store.js"></script>
+
+</head>
+
+<body>
+
+    <!-- 헤더 -->
+    <header>
+        <div class="inner">
+
+            <h1 class="logo"><a href="../../index.html">데스커</a></h1>
+
+            <nav class="navi">
+                <ul class="menu">
+                    <li>
+                        <a href="contents/products/category.html" class="gnb">Products</a>
+
+                        <ul class="lnb">
+                            <li><a href="contents/products/category.html">제품소개</a></li>
+                            <li><a href="contents/products/review.html">제품후기</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="contents/activity/projects.html" class="gnb">Activity</a>
+
+                        <ul class="lnb">
+                            <li><a href="contents/activity/projects.html">프로젝트</a></li>
+                            <li><a href="contents/activity/dmagazine.html">데스커 소식</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="story.html" class="gnb">I AM DESKER</a>
+
+                        <ul class="lnb">
+                            <li><a href="story.html">브랜드 스토리</a></li>
+                            <li><a href="store.html">매장안내</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="contents/planning-service/about.html" class="gnb">Planning Service</a>
+
+                        <ul class="lnb">
+                            <li><a href="contents/planning-service/about.html">플래닝서비스 알아보기</a></li>
+                            <li><a href="#">플래닝서비스 BASIC</a></li>
+                            <li><a href="#">플래닝서비스 PRO</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#" class="gnb">Biz</a>
+
+                        <ul class="lnb">
+                            <li><a href="#">비즈니스 혜택</a></li>
+                            <li><a href="#">비즈니스 갤러리</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="icon-wrap clear">
+                <div class="search">
+                    <form action="#">
+                        <fieldset>
+                            <legend>제품검색</legend>
+
+                            <input type="text" placeholder="제품검색">
+                            <input type="submit">
+                        </fieldset>
+                    </form>
+                </div>
+
+                <div class="login">
+                    <a href="#">로그인 버튼</a>
+                </div>
+
+                <div class="all-menu">
+                    <a href="#">모든메뉴 버튼</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="bg">서브메뉴 배경</div>
+    </header>
+
+
+    <!-- 본문내용 -->
+    <section>
+        <div class="con-tit">
+            <h2>Store</h2>
+            <p>데스커의 다양한 제품들을 매장에서 확인해보세요.</p>
+        </div>
+
+        <article class="store">
+            <div class="map">
+                <img src="img/map.png" alt="데스커 매장위치 표시용 지도배경">
+
+                <ul class="site">
+                    <li class="seoul on"><a href="#seoul">서울</a></li>
+                    <li class="incheon"><a href="#incheon">인천</a></li>
+                    <li class="gyeonggi"><a href="#gyeonggi">경기</a></li>
+                    <li class="daejeon"><a href="#daejeon">대전</a></li>
+                    <li class="daegu"><a href="#daegu">대구</a></li>
+                    <li class="busan"><a href="#busan">부산</a></li>
+                    <li class="gwangju"><a href="#gwangju">광주</a></li>
+                </ul>
+            </div>
+
+            <div id="seoul" class="local-store">
+                <h3 class="location">Seoul</h3>
+
+                <div class="info-viewer">
+                    <ul class="info-wrap">
+                        <li>
+                            <div class="store-img"><img src="img/store/store_seoul-songpa_01.jpg" alt="데스커 스토어 송파">
+                            </div>
+
+                            <div class="store-info">
+                                <h4>데스커 스토어 송파</h4>
+                                <p class="address">서울 송파구 오금로 310 7층 데스커</p>
+                                <p class="tel">02-430-0104</p>
+                                <p class="time">월-금 10:00-19:00</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="store-img"><img src="img/store/store_seoul-sinsa_01.jpg" alt="데스커 스토어 신사"></div>
+
+                            <div class="store-info">
+                                <h4>데스커 스토어 신사</h4>
+                                <p class="address">서울 강남구 도산대로25길 21</p>
+                                <p class="tel">02-6205-1662</p>
+                                <p class="time">월-일 10:00-19:00</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="store-img"><img src="img/store/store_seoul-yeonnam_01.jpg" alt="데스커 스토어 연남">
+                            </div>
+
+                            <div class="store-info">
+                                <h4>데스커 스토어 연남</h4>
+                                <p class="address">서울 마포구 동교로25길 54 데스커</p>
+                                <p class="tel">02-3142-7173</p>
+                                <p class="time">월-토 10:00-19:00</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="store-img"><img src="img/store/store_seoul-lotteworld_01.jpg" alt="데스커 롯데월드몰점">
+                            </div>
+
+                            <div class="store-info">
+                                <h4>데스커 롯데월드몰점</h4>
+                                <p class="address">서울 송파구 올림픽로 300 4층(아크앤북 옆)</p>
+                                <p class="tel">010-4064-7651</p>
+                                <p class="time">월-일 10:30-22:00</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="store-img"><img src="img/store/store_seoul-yongsan_01.JPG" alt="데스커 아이파크몰 용산점">
+                            </div>
+
+                            <div class="store-info">
+                                <h4>데스커 아이파크몰 용산점</h4>
+                                <p class="address">서울 용산구 한강대로23길 55 아이파크몰 리빙파크 4층</p>
+                                <p class="tel">02-2012-2076</p>
+                                <p class="time">월-일 11:00-20:30</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="store-img"><img src="img/store/store_seoul-magok_01.jpg" alt="데스커 구경하는 오피스 마곡">
+                            </div>
+
+                            <div class="store-info">
+                                <h4>데스커 구경하는 오피스 마곡</h4>
+                                <p class="address">서울 강서구 마곡동로10길 46 311호</p>
+                                <p class="tel">0507-1310-2536</p>
+                                <p class="time">월-금 09:00-18:00</p>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="scroll">
+                        <div class="bar">스크롤바</div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+
+
+    <!-- 푸터 -->
+    <footer>
+        <div class="inner">
+
+            <div class="ftop clear">
+                <div class="company ">
+                    <div class="co-info">
+                        <a href="#"><img src="img/logo_w.png" alt="데스커"></a>
+
+                        <p>(주)일룸</p>
+                        <p class="ceo">대표이사 정보은</p>
+                        <p>서울특별시 송파구 오금로 311</p>
+                        <p>사업자등록번호 215-86-93600</p>
+                    </div>
+
+                    <div class="sns-icon clear">
+                        <div class="sns">
+                            <a href="#"><img src="img/icon_sns_facebook.png" alt="페이스북 바로가기"></a>
+                        </div>
+
+                        <div class="sns">
+                            <a href="#"><img src="img/icon_sns_instagram.png" alt="인스타그램 바로가기"></a>
+                        </div>
+
+                        <div class="sns">
+                            <a href="#"><img src="img/icon_sns_naver.png" alt="네이버블로그 바로가기"></a>
+                        </div>
+
+                        <div class="sns">
+                            <a href="#"><img src="img/icon_sns_youtube.png" alt="유튜브 바로가기"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="site-map">
+                    <ul class="site-map-gnb">
+                        <li>
+                            <h3>Products</h3>
+
+                            <ul class="site-map-lnb">
+                                <li><a href="#">제품소개</a></li>
+                                <li><a href="#">제품후기</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <h3>Activity</h3>
+
+                            <ul class="site-map-lnb">
+                                <li><a href="#">프로젝트</a></li>
+                                <li><a href="#">데스커 소식</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <h3>I AM DESKER</h3>
+
+                            <ul class="site-map-lnb">
+                                <li><a href="#">브랜드 스토리</a></li>
+                                <li><a href="#">BI</a></li>
+                                <li><a href="#">매장안내</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <h3>Planning Service</h3>
+
+                            <ul class="site-map-lnb">
+                                <li><a href="#">플래닝서비스 알아보기</a></li>
+                                <li><a href="#">플래닝서비스 BASIC</a></li>
+                                <li><a href="#">플래닝서비스 PRO</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <h3>Biz</h3>
+
+                            <ul class="site-map-lnb">
+                                <li><a href="#">비즈니스 혜택</a></li>
+                                <li><a href="#">비즈니스 갤러리</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="fbottom clear">
+                <ul class="policy">
+                    <li><a href="#">윤리신고센터</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                </ul>
+
+                <p>Copyright 2022 iloom CO. LTD. All right reserved.</p>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>

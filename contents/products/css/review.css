@@ -253,12 +253,12 @@ article.review {
     z-index: 9999;
 }
 #modal .pop-up {
-    width: 60%;
-    height: 70%;
+    width: 50%;
+    height: 60%;
     background-color: #fff;
     box-shadow: 0 0 6px #666;
 
-    margin: 100px auto;
+    margin: 200px auto;
     padding: 30px;
     border-radius: 15px;
     box-sizing: border-box;
@@ -276,19 +276,21 @@ article.review {
 
 .pop-up .review-img {
     float: left;
-    width: 60%;
+    width: 500px;
+    height: 500px;
     margin-top: 70px;
 }
 .pop-up .review-img img {
     width: 100%;
+    height: 100%;
     display: block;
 }
 
 .pop-up .review-box {
     float: right;
-    width: 37%;
+    width: calc(100% - 520px);
     height: 100%;
-    margin-left: 3%;
+    margin-left: 20px;
 }
 
 .pop-up .review-box .prod-info {
@@ -296,7 +298,7 @@ article.review {
 }
 
 .pop-up .review-box .reviewer {
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     font-size: 14px;
 }
 .pop-up .review-box .reviewer span:last-child {
