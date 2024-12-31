@@ -196,7 +196,7 @@ article.review {
     position: absolute;
     left: 0;
     bottom: 0;
-    z-index: 1;
+    z-index: 2;
     transition: height .2s linear 0s;
 }
 #desk li .review-img > span::after {
@@ -210,7 +210,7 @@ article.review {
     position: absolute;
     right: 0;
     top: 0;
-    z-index: 1;
+    z-index: 2;
     transition: height .2s linear .4s;
 }
 
