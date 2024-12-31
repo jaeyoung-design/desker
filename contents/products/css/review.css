@@ -254,7 +254,7 @@ article.review {
 }
 #modal .pop-up {
     width: 50%;
-    height: 60%;
+    /* height: 60%; */
     background-color: #fff;
     box-shadow: 0 0 6px #666;
 
@@ -277,12 +277,10 @@ article.review {
 .pop-up .review-img {
     float: left;
     width: 500px;
-    height: 500px;
     margin-top: 70px;
 }
 .pop-up .review-img img {
     width: 100%;
-    height: 100%;
     display: block;
 }
 
